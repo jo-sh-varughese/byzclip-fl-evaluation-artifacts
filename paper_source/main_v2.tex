@@ -522,7 +522,7 @@ and server EF21 recursions. Replacing the fixed rate with $\mathrm{rate}(t) =
 \max(\mathrm{target}, 1/(t{+}2))$ (an unbiased cumulative average that decays to
 the target rate, applied to both $\beta$ and $\hat\beta$), $n{=}10$: clean
 accuracy moves from 17.13\%$\,\pm\,$3.15\% to 18.05\%$\,\pm\,$3.35\%
-(Wilcoxon $p{=}0.447$); IPM from 16.26\%$\,\pm\,$2.26\% to
+(Wilcoxon $p{=}0.447$); IPM from 16.27\%$\,\pm\,$2.26\% to
 16.93\%$\,\pm\,$2.90\% ($p{=}0.432$). Both deltas are small, positive, and not
 significant -- smaller than either floor mechanism's (Section~\ref{sec:floor})
 and well short of $\alpha{=}0.05$. Momentum cold-start alone does not explain
@@ -545,7 +545,7 @@ floor are rescaled upward instead of left alone. Applied to $\mathrm{diff} =
 v_i - g_i$, floor fixed at a hand-tuned 0.8 (ceiling unchanged at 1.0),
 $n{=}10$: clean accuracy moves from
 17.13\%$\,\pm\,$3.15\% to 19.26\%$\,\pm\,$3.72\% (Wilcoxon $p{=}0.105$); IPM from
-16.26\%$\,\pm\,$2.26\% to 17.97\%$\,\pm\,$3.40\% ($p{=}0.064$). Neither reaches
+16.27\%$\,\pm\,$2.26\% to 17.97\%$\,\pm\,$3.40\% ($p{=}0.064$). Neither reaches
 significance at $\alpha{=}0.05$, but this is the largest of the three positive
 deltas among the six clipping/momentum mechanisms tested at $n{=}10$ (momentum
 warm-start, Section~\ref{sec:momentum}, also moved in the same direction but by
@@ -1044,10 +1044,11 @@ learning method's known failure modes already provides.
 \label{sec:conclusion}
 
 A CIFAR-10-scale accuracy collapse in a Byzantine-robust, differentially private
-federated learning algorithm is not, in this case, explained by four
-independently-constructed clipping-ceiling mechanisms (one a mechanistically-proven
-no-op, confirmed with matched-seed, paired statistical tests; the others tested
-at smaller sample sizes and reported as such), by learning-rate transfer or
+federated learning algorithm is not, in this case, explained by three
+independently-constructed clipping-ceiling mechanisms (two mechanistically-proven
+no-ops, confirmed with matched-seed, paired statistical tests; the third, an
+extreme-value-theory variant not a proven no-op by construction, also reaching
+$n{=}10$ and showing no significant effect), by learning-rate transfer or
 missing normalization (both now tested at $n{=}10$: retuning the learning rate
 downward is significantly \emph{worse}, robust to Bonferroni correction across
 every mechanism audited in this paper, and normalization's one
