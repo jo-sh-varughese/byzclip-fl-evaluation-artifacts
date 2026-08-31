@@ -13,7 +13,7 @@
 % NOTE: tmlr.sty already loads natbib (and sets authoryear/round citation
 % style), so natbib must not be loaded again here.
 
-\title{Evaluation Artifacts, Not Algorithmic Limits: The CIFAR-10 Gap in Byzantine-Robust, Differentially Private Federated Learning}
+\title{Diagnosing the CIFAR-10 Gap in Byzantine-Robust, Differentially Private Federated Learning: Evaluation Artifacts and Remaining Limits}
 
 \author{\name Anonymous Author \email anon@example.com \\
         \addr Anonymous Institution}
@@ -91,7 +91,7 @@ algorithm itself; we report the diagnosed failure rather than a number forced
 through it. Code, all raw per-seed results, and a written account of two design
 iterations that failed and were fixed or reported rather than deleted are
 included in the anonymized supplementary material accompanying this
-submission.
+submission, and at \url{https://anonymous.4open.science/r/byzclip-fl-evaluation-artifacts-A4F4/}.
 \end{abstract}
 
 \section{Introduction}
@@ -853,7 +853,13 @@ with clipping-based robust aggregation generally, relies on $\tau$
 threshold cannot simultaneously grow without bound and stay bounded: past
 whatever point a heavy-tail-optimal schedule would place $\tau$, an adversary
 can inject a contribution of arbitrary magnitude and the clipping mechanism no
-longer constrains it. Tying $\tau_t$ to an online estimate of the \emph{current}
+longer constrains it. \textbf{To be precise about what this observation is and
+is not: it identifies incompatible prescriptions between the two specific
+analyses we checked (Section~\ref{sec:clip}), not a proven impossibility result
+for any algorithm jointly achieving heavy-tail-optimal convergence and
+Byzantine robustness} -- the full statement of that caveat follows below, and
+we do not treat the observation as license to claim more than it establishes
+anywhere else in this paper. Tying $\tau_t$ to an online estimate of the \emph{current}
 robust scale (our EVT-quantile design, Section~\ref{sec:clip}) sidesteps this by
 construction -- a stable scale estimate keeps $\tau$ bounded -- at the
 acknowledged cost of not literally reproducing the moment-bound theorem's

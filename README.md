@@ -1,8 +1,8 @@
 <div align="center">
 
-# Evaluation Artifacts, Not Algorithmic Limits
+# Diagnosing the CIFAR-10 Gap in Byzantine-Robust, Differentially Private Federated Learning
 
-**Diagnosing (and closing) a CIFAR-10 accuracy collapse in Byzantine-robust, differentially private federated learning**
+**Evaluation artifacts and remaining limits**
 
 [![Python](https://img.shields.io/badge/python-3.9%2B-blue)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-harness-ee4c2c)](https://pytorch.org/)
