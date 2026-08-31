@@ -42,9 +42,12 @@ an extreme-value-theory-calibrated variant), momentum cold-start, and a missing
 clipping floor (tested via a hand-tuned constant and a tail-index-calibrated
 variant) -- eight tested mechanisms in total, each inside the unmodified
 algorithm, matched to its own published hyperparameters, with paired
-significance testing at up to $n{=}10$ seeds. The clipping-ceiling
-miscalibration is ruled out as a mechanistically-proven no-op (the ceiling
-provably never binds, confirmed exactly at $n{=}10$, Wilcoxon $p{=}1.000$); a
+significance testing at up to $n{=}10$ seeds. Two of the three clipping-ceiling
+mechanisms are ruled out as mechanistically-proven no-ops (the ceiling provably
+never binds, confirmed exactly at $n{=}10$, Wilcoxon $p{=}1.000$); the third, an
+extreme-value-theory variant designed specifically to avoid that saturation, is
+not a proven no-op but empirically shows no effect either (six cells, $n{=}10$,
+$p \geq 0.23$). A
 four-point learning-rate sweep and a four-point normalization sweep, both now
 at $n{=}10$, show no beneficial direction -- retuning the learning rate downward
 is significantly \emph{worse} at two of three retuned values (Wilcoxon
@@ -499,9 +502,10 @@ construction, so we report it with the appropriate caveat and, now that it
 reaches $n{=}10$, an actual significance test rather than a small-sample
 sensitivity sweep: across all six cells (CIFAR-10, both conditions, $q \in
 \{0.01, 0.05, 0.2\}$), mean accuracy stays within 0.06 percentage points of the
-fixed-threshold baseline (clean: 17.13\%$\,\pm\,$3.15\% baseline vs.\
-17.12--17.13\% across the three $q$ values; IPM: 16.27\%$\,\pm\,$2.26\%
-baseline vs.\ 16.29--16.38\%), and none of the six paired Wilcoxon tests
+fixed-threshold baseline on the clean condition and within 0.12 percentage
+points on IPM (clean: 17.13\%$\,\pm\,$3.15\% baseline vs.\
+17.07--17.13\% across the three $q$ values; IPM: 16.27\%$\,\pm\,$2.26\%
+baseline vs.\ 16.29--16.39\%), and none of the six paired Wilcoxon tests
 approaches significance ($p{=}0.814$, $0.371$, $0.570$, $0.232$, $0.672$,
 $0.572$ for clean $q{=}0.01$, IPM $q{=}0.01$, clean $q{=}0.05$, IPM $q{=}0.05$,
 clean $q{=}0.2$, IPM $q{=}0.2$ respectively). None of these six tests survives
@@ -568,7 +572,7 @@ Learning-rate retune ($\gamma$) & 10 & $-4.6$pp / $-5.2$pp at $\gamma{=}0.02/0.0
 GroupNorm & 10 & $-4.5$pp at $\gamma{=}0.1$, $p{=}0.037$ (uncorrected only) & not significant after correction \\
 Adaptive quantile ceiling & 3 & identical to 4 decimals & no-op (mechanistically proven) \\
 Growing schedule ceiling & 10 & identical to 4 decimals clean ($p{=}1.000$); within noise, IPM ($p{=}0.688$) & no-op (mechanistically proven) \\
-EVT-quantile ceiling & 10 & within 0.06pp, $p{\geq}0.232$ & not significant \\
+EVT-quantile ceiling & 10 & within 0.06pp clean / 0.12pp IPM, $p{\geq}0.232$ & not significant \\
 Momentum cold-start & 10 & +0.9pp / +0.7pp, $p{=}0.447/0.432$ & not significant \\
 Hand-tuned floor (0.8) & 10 & +2.1pp / +1.7pp, $p{=}0.105/0.064$ & not significant \\
 EVT-quantile floor & 10 & +1.2pp / +1.4pp, $p{=}0.275/0.375$ & not significant \\
