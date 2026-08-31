@@ -57,17 +57,23 @@ print("  matched_compute_T100steps (lr=0.1): test_acc=0.1781")
 print("  generous_10epochs (lr=0.1, 10 epochs): test_acc=0.1000 (diverged to chance)")
 print("  generous_10epochs (lr=0.01, 10 epochs): test_acc=0.6522")
 
-print("\n=== Confound check: LR retune + GroupNorm, clean/no-DP/no-Byzantine, T=80 ===")
+print("\n=== Confound check: LR retune + GroupNorm, clean/no-DP/no-Byzantine, T=80, n=10 ===")
+base_lrgn = load("confound_check", "SmallCNN__gamma0.1__seed{seed}.json", 10)
 for arch in ["SmallCNN", "SmallCNNGN"]:
     for gamma in [0.1, 0.05, 0.02, 0.01]:
-        accs = load("confound_check", f"{arch}__gamma{gamma}__seed{{seed}}.json", 3)
+        accs = load("confound_check", f"{arch}__gamma{gamma}__seed{{seed}}.json", 10)
         report(f"  {arch} gamma={gamma}", accs)
+        if not (arch == "SmallCNN" and gamma == 0.1):
+            paired(f"    vs SmallCNN gamma=0.1 baseline", base_lrgn, accs)
 
-print("\n=== Adaptive-clip (AC21) check, n=3 pilot only (never scaled up) ===")
+print("\n=== Adaptive-clip (AC21) check -- AC21 mechanism itself stays n=3 pilot")
+print("(mechanistically-proven no-op, see paper Section 4.3); its baseline was")
+print("separately scaled to n=10 for the EVT-quantile ceiling's matched comparison ===")
 for cond in ["clean", "ipm"]:
-    base = report(f"  baseline {cond}", load("adaptive_clip_check", f"baseline__{cond}__seed{{seed}}.json", 3))
+    base3 = report(f"  baseline (n=3 subset) {cond}", load("adaptive_clip_check", f"baseline__{cond}__seed{{seed}}.json", 3))
     for q in [0.3, 0.5, 0.7]:
         ac21 = report(f"  ac21(q={q}) {cond}", load("adaptive_clip_check", f"ac21__{cond}__q{q}__seed{{seed}}.json", 3))
+    report(f"  baseline (n=10, scaled up) {cond}", load("adaptive_clip_check", f"baseline__{cond}__seed{{seed}}.json", 10))
 
 print("\n=== Band-clip (hand-tuned floor=0.8) scale-up, n=10 ===")
 for cond in ["clean", "ipm"]:
@@ -92,19 +98,13 @@ for cond in ["clean", "ipm"]:
     report(f"  E=1 (floor=0.8 only) {cond}", e1)
     report(f"  E=5 (floor=0.8 + local steps) {cond}", e5)
 
-print("\n=== Tail-adaptive ceiling (moment_schedule, the flawed/no-op design) ===")
-print("NOTE: this run was killed mid-execution (background-task kill, not a script bug) "
-      "after clean completed to n=10 but ipm only reached n=3; superseded by the "
-      "corrected evt_quantile design rather than resumed. Report n honestly per condition.")
-for cond, n in [("clean", 10), ("ipm", 3)]:
-    base = load_multi(["tailadaptive_check", "evtfloor_scaleup"], f"baseline__{cond}__seed{{seed}}.json", n)
-    tail = load("tailadaptive_check", f"tailadaptive__{cond}__seed{{seed}}.json", n)
+print("\n=== Tail-adaptive ceiling (moment_schedule, the flawed/no-op design), n=10 both conditions ===")
+for cond in ["clean", "ipm"]:
+    base = load("tailadaptive_check", f"baseline__{cond}__seed{{seed}}.json", 10)
+    tail = load("tailadaptive_check", f"tailadaptive__{cond}__seed{{seed}}.json", 10)
     report(f"  baseline {cond}", base)
     report(f"  tailadaptive(moment_schedule) {cond}", tail)
-    if n >= 6:
-        paired(f"  {cond}", base, tail)
-    else:
-        print(f"  {cond}: n={n} too small for a meaningful Wilcoxon p-value -- not computed")
+    paired(f"  {cond}", base, tail)
 
 print("\n=== Tail-adaptive ceiling, MNIST, n=10 ===")
 for cond in ["clean", "ipm"]:
@@ -114,11 +114,13 @@ for cond in ["clean", "ipm"]:
     report(f"  tailadaptive(moment_schedule) {cond}", tail)
     paired(f"  {cond}", base, tail)
 
-print("\n=== EVT-quantile ceiling, n=3 pilot only (no scale-up run) ===")
+print("\n=== EVT-quantile ceiling, n=10 (baseline: adaptive_clip_check, scaled up) ===")
+base10_ac = {}
 for cond in ["clean", "ipm"]:
+    base10_ac[cond] = report(f"  baseline {cond}", load("adaptive_clip_check", f"baseline__{cond}__seed{{seed}}.json", 10))
     for q in [0.01, 0.05, 0.2]:
-        accs = load("evt_quantile_pilot", f"evt__{cond}__q{q}__seed{{seed}}.json", 3)
-        report(f"  evt-ceiling {cond} q={q}", accs)
+        accs = report(f"  evt-ceiling {cond} q={q}", load("evt_quantile_pilot", f"evt__{cond}__q{q}__seed{{seed}}.json", 10))
+        paired(f"    vs baseline", base10_ac[cond], accs)
 
 print("\n=== EVT-quantile floor (q=0.001) scale-up, n=10 ===")
 for cond in ["clean", "ipm"]:

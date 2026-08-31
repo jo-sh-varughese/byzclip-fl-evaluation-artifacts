@@ -47,10 +47,13 @@ def load_accs(dirname, pattern, seeds):
 base3_clean = load_accs("adaptive_clip_check", "baseline__clean__seed{seed}.json", range(3))
 base3_ipm = load_accs("adaptive_clip_check", "baseline__ipm__seed{seed}.json", range(3))
 base10_clean = load_accs("tailadaptive_check", "baseline__clean__seed{seed}.json", range(10))
-base10_ipm = np.concatenate([
-    load_accs("tailadaptive_check", "baseline__ipm__seed{seed}.json", range(3)),
-    load_accs("evtfloor_scaleup", "baseline__ipm__seed{seed}.json", range(3, 10)),
-])
+base10_ipm = load_accs("tailadaptive_check", "baseline__ipm__seed{seed}.json", range(10))
+# adaptive_clip_check's own baseline was scaled to n=10 to match evt_quantile_pilot's
+# scale-up (cifar10_adaptive_clip_baseline_scaleup.py); numerically identical to
+# base10_clean/base10_ipm above (both call run_experiment with the same fixed args),
+# kept as a separate load for an explicit apples-to-apples pairing with the EVT cells.
+base10_ac_clean = load_accs("adaptive_clip_check", "baseline__clean__seed{seed}.json", range(10))
+base10_ac_ipm = load_accs("adaptive_clip_check", "baseline__ipm__seed{seed}.json", range(10))
 
 rows = []
 
@@ -68,11 +71,11 @@ add("Adaptive quantile ceiling ($q{=}0.5$)", base3_clean,
     base3_ipm, load_accs("adaptive_clip_check", "ac21__ipm__q0.5__seed{seed}.json", range(3)))
 add("Growing schedule ceiling", base10_clean,
     load_accs("tailadaptive_check", "tailadaptive__clean__seed{seed}.json", range(10)),
-    load_accs("tailadaptive_check", "baseline__ipm__seed{seed}.json", range(3)),
-    load_accs("tailadaptive_check", "tailadaptive__ipm__seed{seed}.json", range(3)))
-add("EVT-quantile ceiling ($q{=}0.05$)", base3_clean,
-    load_accs("evt_quantile_pilot", "evt__clean__q0.05__seed{seed}.json", range(3)),
-    base3_ipm, load_accs("evt_quantile_pilot", "evt__ipm__q0.05__seed{seed}.json", range(3)))
+    base10_ipm,
+    load_accs("tailadaptive_check", "tailadaptive__ipm__seed{seed}.json", range(10)))
+add("EVT-quantile ceiling ($q{=}0.05$)", base10_ac_clean,
+    load_accs("evt_quantile_pilot", "evt__clean__q0.05__seed{seed}.json", range(10)),
+    base10_ac_ipm, load_accs("evt_quantile_pilot", "evt__ipm__q0.05__seed{seed}.json", range(10)))
 add("Momentum warm-start",
     load_accs("warmstart_scaleup", "baseline__clean__seed{seed}.json", range(10)),
     load_accs("warmstart_scaleup", "warmstart__clean__seed{seed}.json", range(10)),

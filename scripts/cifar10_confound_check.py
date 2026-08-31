@@ -34,7 +34,7 @@ os.makedirs(RESULTS_DIR, exist_ok=True)
 
 GAMMAS = [0.1, 0.05, 0.02, 0.01]
 ARCHS = [("SmallCNN", SmallCNN), ("SmallCNNGN", SmallCNNGN)]
-N_SEEDS = 3  # pilot scale; scale up whichever cell(s) look promising
+N_SEEDS = 10  # scaled up from the original n=3 pilot for full paired significance testing
 T = 80       # matches C3_ablation's clean_no_dp_T80_control exactly
 
 train, test = load_cifar10(DATA_ROOT)

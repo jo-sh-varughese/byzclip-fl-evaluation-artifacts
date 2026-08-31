@@ -1,0 +1,77 @@
+{
+  "final_test_acc": 0.1672,
+  "accuracy_trace": [
+    {
+      "round": 8,
+      "test_acc": 0.1001
+    },
+    {
+      "round": 16,
+      "test_acc": 0.1078
+    },
+    {
+      "round": 24,
+      "test_acc": 0.1
+    },
+    {
+      "round": 32,
+      "test_acc": 0.1
+    },
+    {
+      "round": 40,
+      "test_acc": 0.1011
+    },
+    {
+      "round": 48,
+      "test_acc": 0.1769
+    },
+    {
+      "round": 56,
+      "test_acc": 0.1864
+    },
+    {
+      "round": 64,
+      "test_acc": 0.1729
+    },
+    {
+      "round": 72,
+      "test_acc": 0.1413
+    },
+    {
+      "round": 80,
+      "test_acc": 0.1672
+    }
+  ],
+  "diverged": false,
+  "final_tau": 0.22839688477008005,
+  "final_alpha_hat": 6.76716412422931,
+  "tau_trace_summary": {
+    "min": 0.11843870063773393,
+    "max": 1.0
+  },
+  "config": {
+    "n_regular": 20,
+    "n_byzantine": 4,
+    "attack_type": "ipm",
+    "beta": 0.1,
+    "beta_hat": 0.1,
+    "gamma": 0.1,
+    "mode": "evt_quantile",
+    "tau_init": 1.0,
+    "tau_min": 0.001,
+    "tau_max": 100.0,
+    "schedule_c": 1.0,
+    "q_target": 0.2,
+    "window_rounds": 10,
+    "n_byz_assumed": 0,
+    "tail_warmup_rounds": 10,
+    "ragg_name": "trimmed_mean",
+    "T": 80,
+    "batch_size": 32,
+    "seed": 8,
+    "d": 282250
+  },
+  "cond": "ipm",
+  "q_target": 0.2,
+  "seed": 8
+}

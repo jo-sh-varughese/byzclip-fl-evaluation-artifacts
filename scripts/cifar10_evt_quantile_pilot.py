@@ -23,7 +23,8 @@ os.makedirs(RESULTS_DIR, exist_ok=True)
 
 GAMMA = 0.1
 T = 80
-N_SEEDS = 3
+N_SEEDS = 10  # scaled up from the original n=3 pilot; see cifar10_adaptive_clip_baseline_scaleup.py
+              # for the matching n=10 extension of the shared fixed-tau baseline this compares against
 Q_TARGETS = [0.01, 0.05, 0.2]
 CONDITIONS = [
     ("clean", dict(n_byzantine=0, attack_type=None)),

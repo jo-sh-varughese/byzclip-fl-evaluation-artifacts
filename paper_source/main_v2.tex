@@ -45,14 +45,18 @@ algorithm, matched to its own published hyperparameters, with paired
 significance testing at up to $n{=}10$ seeds. The clipping-ceiling
 miscalibration is ruled out as a mechanistically-proven no-op (the ceiling
 provably never binds, confirmed exactly at $n{=}10$, Wilcoxon $p{=}1.000$); a
-four-point learning-rate sweep and a four-point normalization sweep, both at
-$n{=}3$, show no beneficial trend, reported as such rather than as a
-significance-tested null; momentum cold-start shows a small, non-significant
-positive direction at $n{=}10$ ($p \geq 0.43$); and the clipping floor shows the
-largest such direction, also non-significant (Wilcoxon $p{=}0.064$), including
-when its hand-tuned constant is replaced by a tail-index-calibrated variant
-designed specifically to close the gap between this line of work's own
-heavy-tail measurements and its clipping hyperparameter ($p \geq 0.275$).
+four-point learning-rate sweep and a four-point normalization sweep, both now
+at $n{=}10$, show no beneficial direction -- retuning the learning rate downward
+is significantly \emph{worse} at two of three retuned values (Wilcoxon
+$p{=}0.00195$ both, surviving Bonferroni correction across a 21-test family,
+the only cells in this audit to do so), and GroupNorm's one nominally-significant
+cell does not survive that same correction; momentum cold-start shows a small,
+non-significant positive direction at $n{=}10$ ($p \geq 0.43$); and the clipping
+floor shows the largest such direction, also non-significant (Wilcoxon
+$p{=}0.064$), including when its hand-tuned constant is replaced by a
+tail-index-calibrated variant designed specifically to close the gap between
+this line of work's own heavy-tail measurements and its clipping hyperparameter
+($p \geq 0.275$).
 What does close most of the gap is standard machinery absent from the original
 protocol: a backbone pretrained centrally on a small, disjoint 10\% public split,
 frozen, with a lightweight head federated-trained using the same floor-clipping
@@ -141,12 +145,15 @@ it was never tuned on and three independently-constructed adaptive alternatives
 (Section~\ref{sec:clip}), momentum cold-start
 (Section~\ref{sec:momentum}), and a missing clipping floor
 (Section~\ref{sec:floor}). The clipping ceiling is ruled out as a
-mechanistically-proven no-op; learning-rate transfer and normalization show no
-beneficial trend across small, $n{=}3$ sweeps (not significance-tested nulls);
-momentum cold-start shows a small, non-significant positive direction at
-$n{=}10$; and the clipping floor shows the same direction, more strongly but
-still short of significance. None of the five, on the evidence gathered, is a
-complete explanation for the collapse. We then
+mechanistically-proven no-op; learning-rate transfer and normalization, each
+now tested at $n{=}10$, show no beneficial direction in any cell -- retuning
+the learning rate downward is significantly worse at two values (surviving
+Bonferroni correction, uniquely among every mechanism in this audit), and
+normalization's one uncorrected-significant cell does not survive that same
+correction; momentum cold-start shows a small, non-significant positive
+direction at $n{=}10$; and the clipping floor shows the same direction, more
+strongly but still short of significance. None of the five, on the evidence
+gathered, is a complete explanation for the collapse. We then
 report what does explain most of the gap: standard, non-novel machinery -- a
 centrally pretrained, frozen backbone and additional local computation per
 communication round -- recovers most of it (Section~\ref{sec:resolution}), and
@@ -161,10 +168,13 @@ CIFAR-10-scale collapse in a Byzantine-robust, DP-capable federated algorithm,
 each hypothesis reported at its own tested sample size and evidentiary
 strength rather than a uniform claim: a miscalibrated clipping ceiling ruled
 out as a mechanistically-proven no-op; learning-rate transfer and missing
-normalization showing no beneficial trend across small ($n{=}3$) sweeps;
-momentum cold-start showing a small, non-significant effect at $n{=}10$; and a
-missing clipping floor's effect real in direction but not statistically
-significant. (2) A tail-index-calibrated clipping mechanism, grounded in the
+normalization, each tested at $n{=}10$, showing no beneficial direction in any
+cell -- retuning the learning rate downward is significantly \emph{worse} at
+two values, surviving Bonferroni correction across a 21-test family (the only
+cells in this audit to do so), while normalization's one uncorrected-significant
+cell does not survive that correction; momentum cold-start showing a small,
+non-significant effect at $n{=}10$; and a missing clipping floor's effect real
+in direction but not statistically significant. (2) A tail-index-calibrated clipping mechanism, grounded in the
 heavy-tailed-SGD literature and this line of work's own tail-index measurements,
 designed specifically to close the gap between measurement and algorithm design
 -- tested honestly, including a documented first design that failed for a
@@ -305,11 +315,13 @@ into the $T{=}80$ comparison.
 Wilcoxon signed-rank test (\texttt{scipy.stats.wilcoxon}, two-sided) over matched
 seeds, at $n{=}10$ unless explicitly marked as a smaller-$n$ pilot -- and where a
 mechanism was only ever run at $n{=}3$, we report it as such rather than implying
-a completed scale-up. We define the CONFIRMATORY family as the seven $p$-values
-computed for mechanisms with $n{=}10$ (the two floor mechanisms, clean and IPM;
-the growing-schedule ceiling's clean condition; the momentum warm-start, clean
-and IPM) and apply a Bonferroni correction across that family
-(family size 7, corrected $\alpha{=}0.05/7{\approx}0.00714$):
+a completed scale-up. We define the CONFIRMATORY family as the 21 $p$-values
+computed for every mechanism actually tested at $n{=}10$ -- the two floor
+mechanisms, clean and IPM; both conditions of the growing-schedule ceiling; the
+momentum warm-start, clean and IPM; all six EVT-quantile-ceiling cells; the
+three retuned learning rates; and all four GroupNorm cells -- and apply a
+Bonferroni correction across that family (family size 21, corrected
+$\alpha{=}0.05/21{\approx}0.00238$):
 \begin{center}
 \small
 \begin{tabular}{lc}
@@ -321,26 +333,48 @@ Hand-tuned floor, IPM & 0.064453 \\
 EVT-quantile floor, clean & 0.275391 \\
 EVT-quantile floor, IPM & 0.375000 \\
 Growing schedule ceiling, clean & 1.000000 \\
+Growing schedule ceiling, IPM & 0.687500 \\
 Momentum warm-start, clean & 0.447266 \\
 Momentum warm-start, IPM & 0.431641 \\
+EVT-quantile ceiling, $q{=}0.01$ clean & 0.814453 \\
+EVT-quantile ceiling, $q{=}0.01$ IPM & 0.371094 \\
+EVT-quantile ceiling, $q{=}0.05$ clean & 0.570312 \\
+EVT-quantile ceiling, $q{=}0.05$ IPM & 0.232422 \\
+EVT-quantile ceiling, $q{=}0.2$ clean & 0.671875 \\
+EVT-quantile ceiling, $q{=}0.2$ IPM & 0.572266 \\
+Learning-rate retune, $\gamma{=}0.05$ & 0.048828 \\
+Learning-rate retune, $\gamma{=}0.02$ & 0.001953 \\
+Learning-rate retune, $\gamma{=}0.01$ & 0.001953 \\
+GroupNorm, $\gamma{=}0.1$ & 0.037109 \\
+GroupNorm, $\gamma{=}0.05$ & 0.130859 \\
+GroupNorm, $\gamma{=}0.02$ & 0.845703 \\
+GroupNorm, $\gamma{=}0.01$ & 0.130859 \\
 \bottomrule
 \end{tabular}
 \end{center}
-None of the seven approaches even the uncorrected $\alpha{=}0.05$, so none
-survive Bonferroni correction either -- the correction does not change any
-audit conclusion in this paper, but we report it explicitly rather than only
-asserting informally that it would not matter. The $n{=}3$-only mechanisms
-(adaptive-quantile and EVT-quantile ceilings, the learning-rate and
-GroupNorm sweeps) are excluded from this family: the first two are
-mechanistically-established no-ops rather than significance tests (see
-Section~\ref{sec:clip}), and the latter two are explicitly reported as
-small-sample sensitivity sweeps, not hypothesis tests, so including them in a
-correction would misrepresent what they are. Section~\ref{sec:resolution}'s
-own result ($p{=}0.00195$, Section~\ref{sec:resolution}) is treated as a
-separate, single confirmatory test of a different hypothesis (does the
-resolution mechanism recover accuracy, not does an audit mechanism) and is not
-diluted by this family; it survives Bonferroni correction against a family of
-any plausible size considered in this paper by a wide margin.
+Two of the 21 tests -- learning-rate retune at $\gamma{=}0.02$ and
+$\gamma{=}0.01$, both $p{=}0.00195$ -- survive Bonferroni correction; both are
+in the harmful direction (lower accuracy than the headline $\gamma{=}0.1$), not
+the beneficial direction any audited mechanism would need to explain the
+collapse away. Every other test, including GroupNorm's uncorrected-significant
+$\gamma{=}0.1$ cell ($p{=}0.037$, above the corrected threshold), does not
+survive. The correction therefore does not change any audit conclusion in this
+paper -- no mechanism is shown to beneficially recover accuracy, corrected or
+not -- but it does sharpen one: retuning $\gamma$ downward inside the full
+algorithm is not merely unhelpful, it robustly hurts, surviving the strictest
+multiple-comparison bar applied anywhere in this paper. The one still-excluded
+$n{=}3$ mechanism (the adaptive-quantile ceiling) is excluded from this family
+for a simple reason unrelated to its mechanistically-proven no-op status: it
+was never rerun at $n{=}10$, so no paired test at that sample size exists to
+include. (Its no-op status, established in Section~\ref{sec:clip}, means
+rerunning it at higher $n$ would not change its own conclusion regardless; we
+did not do so because it would add compute without adding evidence, not
+because a $p$-value would be invalid.) Section~\ref{sec:resolution}'s own
+result ($p{=}0.00195$, Section~\ref{sec:resolution}) is treated as a separate,
+single confirmatory test of a different hypothesis (does the resolution
+mechanism recover accuracy, not does an audit mechanism) and is not diluted by
+this family; it survives Bonferroni correction against this family's size, and
+against any comparably-sized family this paper could plausibly construct.
 
 \section{Confound Audit}
 \label{sec:audit}
@@ -362,17 +396,24 @@ this architecture at longer horizons in a non-federated setting.
 
 Retuning $\gamma \in \{0.1, 0.05, 0.02, 0.01\}$ \emph{inside} the full algorithm
 (clipping and double-momentum both active, clean/no-DP/no-Byzantine control,
-$T{=}80$, $n{=}3$) does not reproduce this recovery: mean accuracy is
-18.75\% at $\gamma{=}0.1$, 13.87\% at $\gamma{=}0.05$, 12.08\% at $\gamma{=}0.02$,
-and 12.66\% at $\gamma{=}0.01$ -- flat to slightly worse as $\gamma$ decreases,
-the opposite of the single-worker result. We report this as a four-point
-sensitivity sweep at $n{=}3$, not a significance-tested null result: the sample
-is too small to formally test, and we do not claim it rules learning-rate
-transfer out on its own. What it shows is that the single-worker recovery does
-not carry over once clipping and double-momentum are active, which is
-sufficient to conclude learning-rate transfer is not, by itself, a complete
-explanation for the collapse -- it does not establish that retuning $\gamma$
-has no effect under any condition.
+$T{=}80$, $n{=}10$) does not reproduce this recovery: mean accuracy is
+17.13\%$\,\pm\,$3.15\% at $\gamma{=}0.1$ (the paper's own headline rate, and this
+cell's own baseline), 14.22\%$\,\pm\,$2.62\% at $\gamma{=}0.05$ (Wilcoxon
+$p{=}0.049$ against the $\gamma{=}0.1$ cell), 12.55\%$\,\pm\,$1.61\% at
+$\gamma{=}0.02$ ($p{=}0.00195$), and 11.96\%$\,\pm\,$1.56\% at $\gamma{=}0.01$
+($p{=}0.00195$) -- monotonically worse as $\gamma$ decreases, the opposite of
+the single-worker result. Unlike every other mechanism audited in this
+section, this is no longer an underpowered sensitivity sweep: at $n{=}10$,
+$\gamma{=}0.02$ and $\gamma{=}0.01$ are both significantly worse than the
+headline rate, and -- as Section~\ref{sec:setup} details -- both survive
+Bonferroni correction across the full $n{=}10$ confirmatory family, the only
+audited mechanism cells in this paper to do so. That result is precise: it
+is evidence that retuning $\gamma$ \emph{downward} inside the full algorithm
+robustly hurts, not evidence that no retuning could help (only four values
+were tested, none above the headline rate). What it shows is that the
+single-worker recovery does not carry over once clipping and double-momentum
+are active, which is sufficient to conclude learning-rate transfer is not,
+by itself, a complete explanation for the collapse.
 
 \subsection{Missing normalization}
 \label{sec:norm}
@@ -381,16 +422,21 @@ We add \texttt{GroupNorm} after each convolutional layer -- not
 \texttt{BatchNorm}, because \texttt{BatchNorm}'s running-buffer statistics are
 never transmitted or aggregated in this harness's per-client flatten/aggregate
 loop, and GroupNorm's parameters (weight and bias only, no running buffers)
-compose with it correctly. Across the same $\gamma$ grid, $n{=}3$: mean accuracy
-is 10.43\% at $\gamma{=}0.1$ (\emph{worse} than the unnormalized architecture's
-18.75\%), 11.15\% at $\gamma{=}0.05$, 16.34\% at $\gamma{=}0.02$, and 19.03\% at
-$\gamma{=}0.01$. As with the learning-rate sweep above, this is a four-point,
-$n{=}3$ sensitivity sweep, not a significance-tested claim of no effect. The
-best GroupNorm cell (19.03\% at $\gamma{=}0.01$) sits within the same range as
-the best unnormalized cell (18.75\% at $\gamma{=}0.1$) rather than clearly
-above it, and at the algorithm's own headline $\gamma$, GroupNorm is
-numerically worse. We read this as evidence against normalization being a
-straightforward fix at these settings, not as a formally established null.
+compose with it correctly. Across the same $\gamma$ grid, $n{=}10$: mean
+accuracy is 12.66\%$\,\pm\,$3.27\% at $\gamma{=}0.1$ (\emph{significantly worse}
+than the unnormalized architecture's own 17.13\%$\,\pm\,$3.15\% at the same
+$\gamma$, Wilcoxon $p{=}0.037$, though this does not survive the Bonferroni
+correction detailed in Section~\ref{sec:setup}), 13.89\%$\,\pm\,$3.66\% at
+$\gamma{=}0.05$ ($p{=}0.131$), 16.40\%$\,\pm\,$3.28\% at $\gamma{=}0.02$
+($p{=}0.846$), and 19.15\%$\,\pm\,$3.80\% at $\gamma{=}0.01$ ($p{=}0.131$), all
+compared against the unnormalized $\gamma{=}0.1$ baseline. Now that this
+reaches $n{=}10$, none of the four GroupNorm cells is significantly better
+than the unnormalized baseline, and one ($\gamma{=}0.1$, the algorithm's own
+headline rate) is significantly worse uncorrected. The best GroupNorm cell
+(19.15\% at $\gamma{=}0.01$) sits within the same range as the best
+unnormalized cell (17.13\% at $\gamma{=}0.1$) rather than clearly above it. We
+read this as evidence against normalization being a straightforward fix at
+these settings.
 
 \subsection{Clipping-threshold miscalibration}
 \label{sec:clip}
@@ -423,15 +469,24 @@ merely matching on average.
 $h \propto T^{2p/(3p-2)} \sigma^{3p/(3p-2)}$ for $p \in (1,2]$ estimated online.
 Every Hill-$\alpha$ estimate this online estimator ever produced in this codebase
 -- MNIST clean 4.5--11.1, MNIST under IPM 2.6--4.2, CIFAR-10 clean 3.2--4.6, and
-CIFAR-10 under IPM 7.9--8.3 (all 3 pilot-scale seeds) -- sits above 2, so mapping $\alpha$ into the theorem's required
+CIFAR-10 under IPM 6.8--11.7 (all 10 seeds) -- sits above 2, so mapping $\alpha$ into the theorem's required
 $p \in (1,2]$ range
 saturates the clamp at $p{=}2$ on every round, for every dataset and condition:
 there is no real $\alpha$-dependence left once this happens, and because $\tau$
 then grows monotonically past the diagnostic's 0.04--0.16 ceiling within a few
 rounds and never returns, this design is a provable no-op. Confirmed directly:
 CIFAR-10 clean, $n{=}10$, accuracy identical to baseline to four decimal places
-(17.13\%$\,\pm\,$3.15\% both, Wilcoxon $p{=}1.000$); MNIST, $n{=}10$, both
-conditions, $p{=}1.000$.
+(17.13\%$\,\pm\,$3.15\% both, Wilcoxon $p{=}1.000$); CIFAR-10 under IPM,
+$n{=}10$, accuracy matches the baseline within floating-point-scale noise
+(16.27\%$\,\pm\,$2.26\% baseline vs.\ 16.29\%$\,\pm\,$2.25\% tail-adaptive,
+Wilcoxon $p{=}0.688$) -- unlike the clean condition, seeds here differ from
+baseline by up to 0.24 percentage points rather than matching to four decimals
+exactly, which we attribute to ordinary floating-point non-determinism in the
+additional per-round computation the IPM attack path introduces (multi-threaded
+CPU floating-point summation is not guaranteed bit-reproducible across
+separately-invoked runs), not to the clipping mechanism actually engaging --
+the mechanistic argument above does not depend on the attack condition; MNIST,
+$n{=}10$, both conditions, $p{=}1.000$.
 
 \emph{Extreme-value-theory (EVT) quantile ceiling.} Correcting the saturation
 above: $\tau_t = \hat\sigma_t \cdot q^{-1/\hat\alpha_t}$, the Pareto-tail quantile
@@ -440,13 +495,18 @@ scale estimate. This uses the full measured range of $\alpha$ with no saturating
 clamp, and settles $\tau$ in the 0.13--0.7 range (smoke check: $\tau$ settling at
 0.13 with $\hat\alpha{\approx}10.6$) -- inside the range that could plausibly
 bind. Unlike the two mechanisms above, this one is not a provable no-op by
-construction, so we report it with the appropriate caveat: at $n{=}3$ (CIFAR-10,
-both conditions, $q \in \{0.01, 0.05, 0.2\}$), accuracy remains within
-0.001--0.006 of the fixed-threshold baseline on every one of the 18 seed/cell
-combinations (e.g.\ clean, $q{=}0.05$: 18.64\% vs.\ baseline 18.75\%) --
-consistent with no effect, but at
-this sample size we treat it as no detected effect rather than a
-significance-tested null.
+construction, so we report it with the appropriate caveat and, now that it
+reaches $n{=}10$, an actual significance test rather than a small-sample
+sensitivity sweep: across all six cells (CIFAR-10, both conditions, $q \in
+\{0.01, 0.05, 0.2\}$), mean accuracy stays within 0.06 percentage points of the
+fixed-threshold baseline (clean: 17.13\%$\,\pm\,$3.15\% baseline vs.\
+17.12--17.13\% across the three $q$ values; IPM: 16.27\%$\,\pm\,$2.26\%
+baseline vs.\ 16.29--16.38\%), and none of the six paired Wilcoxon tests
+approaches significance ($p{=}0.814$, $0.371$, $0.570$, $0.232$, $0.672$,
+$0.572$ for clean $q{=}0.01$, IPM $q{=}0.01$, clean $q{=}0.05$, IPM $q{=}0.05$,
+clean $q{=}0.2$, IPM $q{=}0.2$ respectively). None of these six tests survives
+the Bonferroni correction detailed in Section~\ref{sec:setup} either, though
+none comes close enough uncorrected for that correction to be the reason.
 
 \subsection{Momentum cold-start}
 \label{sec:momentum}
@@ -499,25 +559,29 @@ hand-tuning in this setting.
 \label{sec:audit-summary}
 
 \begin{table}[t]
-\centering\small
-\begin{tabular}{lccc}
+\centering\footnotesize
+\begin{tabular}{p{2.7cm}cp{5.8cm}p{2.9cm}}
 \toprule
 Mechanism & $n$ & Best result vs.\ baseline & Verdict \\
 \midrule
-Learning-rate retune ($\gamma$) & 3 & flat to worse & no beneficial trend (small $n$) \\
-GroupNorm & 3 & indistinguishable from best unnormalized cell & no beneficial trend (small $n$) \\
+Learning-rate retune ($\gamma$) & 10 & $-4.6$pp / $-5.2$pp at $\gamma{=}0.02/0.01$, $p{=}0.00195$ both & \textbf{significantly worse; survives correction} \\
+GroupNorm & 10 & $-4.5$pp at $\gamma{=}0.1$, $p{=}0.037$ (uncorrected only) & not significant after correction \\
 Adaptive quantile ceiling & 3 & identical to 4 decimals & no-op (mechanistically proven) \\
-Growing schedule ceiling & 10 & identical to 4 decimals, $p{=}1.000$ & no-op (mechanistically proven) \\
-EVT-quantile ceiling & 3 & within 0.001--0.006 & no effect detected (small $n$) \\
+Growing schedule ceiling & 10 & identical to 4 decimals clean ($p{=}1.000$); within noise, IPM ($p{=}0.688$) & no-op (mechanistically proven) \\
+EVT-quantile ceiling & 10 & within 0.06pp, $p{\geq}0.232$ & not significant \\
 Momentum cold-start & 10 & +0.9pp / +0.7pp, $p{=}0.447/0.432$ & not significant \\
 Hand-tuned floor (0.8) & 10 & +2.1pp / +1.7pp, $p{=}0.105/0.064$ & not significant \\
 EVT-quantile floor & 10 & +1.2pp / +1.4pp, $p{=}0.275/0.375$ & not significant \\
 \bottomrule
 \end{tabular}
 \caption{Every mechanism tested against the collapse itself, raw pixels,
-CIFAR-10, $T{=}80$. None reaches significance; the two floor mechanisms and
-momentum warm-start move in a consistent positive direction (floor most, by a
-clear margin), while the three ceiling mechanisms sit at essentially zero.}
+CIFAR-10, $T{=}80$. Learning-rate retuning at $\gamma{=}0.02$ and $\gamma{=}0.01$
+is the only cell in this table that reaches significance, in the harmful
+direction, and the only one to survive the Bonferroni correction detailed in
+Section~\ref{sec:setup}; every other mechanism is not significant. The two
+floor mechanisms and momentum warm-start move in a consistent positive
+direction (floor most, by a clear margin), while the three ceiling mechanisms
+sit at essentially zero.}
 \label{tab:audit-summary}
 \end{table}
 
@@ -896,34 +960,44 @@ tested only at 20 clients) would remain ruled out at production scale (larger
 models, many more clients, GPU-scale training).
 
 \paragraph{Sample sizes vary by mechanism, and we report this rather than
-smoothing over it.} Learning-rate retuning, GroupNorm, and the adaptive-quantile
-and EVT-quantile ceilings were tested at $n{=}3$; the growing-schedule ceiling
-reached $n{=}10$ on the clean condition but only $n{=}3$ on IPM (the background
-job computing it was killed mid-run and superseded by the corrected design
-rather than resumed); momentum cold-start, the two floor mechanisms, and the
-pretrained-backbone results reached the full $n{=}10$ with paired significance
-testing. The DP-noise and non-IID checks, and the floor-clip/local-steps disentangling
-ablation (all Section~\ref{sec:resolution}), are $n{=}3$ pilots, the
-smallest-$n$ results in the paper to carry this much weight -- appropriate for
-a first check of whether the recovery survives at all (it substantially does
-not, for DP; substantially degrades, for non-IID Byzantine robustness) or of
-which mechanism drives it (floor-clip contributes the large majority of the
-combo's gain in both conditions, local steps a smaller minority), but
-not for precise magnitudes, and a priority for scaling up before treating
-those specific percentages as final.
-Table~\ref{tab:audit-summary} states the $n$ used
-for every reported number.
+smoothing over it.} Only the adaptive-quantile ceiling remains at $n{=}3$, for
+the principled reason given in Section~\ref{sec:clip}: it is a
+mechanistically-proven no-op, so a larger sample would not change its
+conclusion. Every other clipping/momentum mechanism -- learning-rate retuning,
+GroupNorm, the growing-schedule ceiling (both conditions), the EVT-quantile
+ceiling, momentum cold-start, and the two floor mechanisms -- now reaches the
+full $n{=}10$ with paired significance testing, including the growing-schedule
+ceiling's IPM condition, which an earlier draft of this audit left at $n{=}3$
+after a background job computing it was killed mid-run; it has since been
+completed and is consistent with the mechanistically-proven no-op status
+established for its clean condition (Wilcoxon $p{=}0.688$, small
+floating-point-scale deviations from baseline attributable to ordinary
+non-determinism in multi-threaded CPU execution, not to the clipping mechanism
+engaging). The DP-noise and non-IID checks, and the floor-clip/local-steps
+disentangling ablation (all Section~\ref{sec:resolution}), are $n{=}3$ pilots,
+the smallest-$n$ results in the paper to carry this much weight -- appropriate
+for a first check of whether the recovery survives at all (it substantially
+does not, for DP; substantially degrades, for non-IID Byzantine robustness) or
+of which mechanism drives it (floor-clip contributes the large majority of the
+combo's gain in both conditions, local steps a smaller minority), but not for
+precise magnitudes, and a priority for scaling up before treating those
+specific percentages as final. Table~\ref{tab:audit-summary} states the $n$
+used for every reported number.
 
-\paragraph{The multiple-comparison correction covers the $n{=}10$ family only.}
-Section~\ref{sec:setup} applies a Bonferroni correction to the seven
-confirmatory ($n{=}10$) $p$-values; none survive, which does not change any
-conclusion. The four $n{=}3$ mechanisms (learning-rate and GroupNorm sweeps,
-adaptive-quantile and EVT-quantile ceilings) are deliberately excluded from
-that correction rather than silently omitted -- two are mechanistically-proven
-no-ops for which a $p$-value would be the wrong kind of evidence, and two are
-explicitly-labeled sensitivity sweeps, not hypothesis tests. We flag this
-scoping choice explicitly rather than let a reader assume the correction covers
-every number in Section~\ref{sec:audit}.
+\paragraph{The multiple-comparison correction now covers every mechanism
+tested at $n{=}10$.} Section~\ref{sec:setup} applies a Bonferroni correction to
+a 21-test confirmatory family spanning every clipping/momentum/learning-rate/
+normalization mechanism reaching $n{=}10$. Two tests survive: learning-rate
+retuning at $\gamma{=}0.02$ and $\gamma{=}0.01$, both in the harmful direction.
+The correction does not change any conclusion about whether a mechanism
+\emph{beneficially} recovers accuracy -- none does, corrected or not -- but it
+does confirm that the one significant departure from baseline in this entire
+audit is robust to the strictest multiple-comparison bar applied anywhere in
+this paper. The adaptive-quantile ceiling remains excluded from this family for
+the reason given above (never rerun at $n{=}10$), not because a $p$-value would
+be invalid for a proven no-op -- the growing-schedule ceiling, also a proven
+no-op, is included precisely because it was rerun at $n{=}10$ and its
+inclusion changes nothing.
 
 \paragraph{The extended round budget is a real disclosure, not a footnote to
 bury.} The $T{=}300$ result in Section~\ref{sec:resolution} uses roughly
@@ -970,8 +1044,11 @@ federated learning algorithm is not, in this case, explained by four
 independently-constructed clipping-ceiling mechanisms (one a mechanistically-proven
 no-op, confirmed with matched-seed, paired statistical tests; the others tested
 at smaller sample sizes and reported as such), by learning-rate transfer or
-missing normalization (small, $n{=}3$ sweeps showing no beneficial trend, not
-significance-tested nulls), or by momentum cold-start (a small,
+missing normalization (both now tested at $n{=}10$: retuning the learning rate
+downward is significantly \emph{worse}, robust to Bonferroni correction across
+every mechanism audited in this paper, and normalization's one
+uncorrected-significant cell does not survive that correction -- neither shows
+a beneficial direction in any cell), or by momentum cold-start (a small,
 non-significant effect at $n{=}10$). A fifth candidate, a missing clipping
 floor, showed a small, consistent positive direction that never reached
 significance ($p \geq 0.064$) even when its hand-tuned constant was replaced by
