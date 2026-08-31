@@ -1,0 +1,403 @@
+{
+  "cells": [
+    {
+      "dataset": "mnist",
+      "alpha": 100.0,
+      "n_byz": 2,
+      "delta_byz": 0.1,
+      "zeta": 0.14437322418867107,
+      "acc_delta0_mean": 0.61233,
+      "acc_delta0_std": 0.10364017609016303,
+      "acc_delta_mean": 0.65388,
+      "acc_delta_std": 0.06459982662515436,
+      "loss_delta0_mean": 1.7369136007130144,
+      "loss_delta_mean": 1.3292111477255821,
+      "bias_acc": -0.041549999999999976,
+      "bias_loss": -0.40770245298743224,
+      "wilcoxon_acc_p": 0.9345703125,
+      "wilcoxon_loss_p": 0.8388671875
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 100.0,
+      "n_byz": 4,
+      "delta_byz": 0.2,
+      "zeta": 0.14437322418867107,
+      "acc_delta0_mean": 0.61233,
+      "acc_delta0_std": 0.10364017609016303,
+      "acc_delta_mean": 0.67802,
+      "acc_delta_std": 0.029150945096171423,
+      "loss_delta0_mean": 1.7369136007130144,
+      "loss_delta_mean": 1.1928365112096073,
+      "bias_acc": -0.06568999999999992,
+      "bias_loss": -0.544077089503407,
+      "wilcoxon_acc_p": 0.9677734375,
+      "wilcoxon_loss_p": 0.7216796875
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 0.5,
+      "n_byz": 2,
+      "delta_byz": 0.1,
+      "zeta": 0.7719886580273962,
+      "acc_delta0_mean": 0.64417,
+      "acc_delta0_std": 0.09038264269205674,
+      "acc_delta_mean": 0.40243,
+      "acc_delta_std": 0.15595648784196187,
+      "loss_delta0_mean": 1.4342913726717232,
+      "loss_delta_mean": 1.9949228203296663,
+      "bias_acc": 0.24174,
+      "bias_loss": 0.560631447657943,
+      "wilcoxon_acc_p": 0.0068359375,
+      "wilcoxon_loss_p": 0.2158203125
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 0.5,
+      "n_byz": 4,
+      "delta_byz": 0.2,
+      "zeta": 0.7719886580273962,
+      "acc_delta0_mean": 0.64417,
+      "acc_delta0_std": 0.09038264269205674,
+      "acc_delta_mean": 0.14404,
+      "acc_delta_std": 0.03726162100607004,
+      "loss_delta0_mean": 1.4342913726717232,
+      "loss_delta_mean": 2.300161182284355,
+      "bias_acc": 0.50013,
+      "bias_loss": 0.8658698096126316,
+      "wilcoxon_acc_p": 0.0009765625,
+      "wilcoxon_loss_p": 0.0068359375
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 0.1,
+      "n_byz": 2,
+      "delta_byz": 0.1,
+      "zeta": 1.5029192174952073,
+      "acc_delta0_mean": 0.5140899999999999,
+      "acc_delta0_std": 0.12920437647386404,
+      "acc_delta_mean": 0.19288,
+      "acc_delta_std": 0.07179088800119414,
+      "loss_delta0_mean": 1.6490771272778513,
+      "loss_delta_mean": 2.2657153403759005,
+      "bias_acc": 0.32120999999999994,
+      "bias_loss": 0.6166382130980492,
+      "wilcoxon_acc_p": 0.0009765625,
+      "wilcoxon_loss_p": 0.0419921875
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 0.1,
+      "n_byz": 4,
+      "delta_byz": 0.2,
+      "zeta": 1.5029192174952073,
+      "acc_delta0_mean": 0.5140899999999999,
+      "acc_delta0_std": 0.12920437647386404,
+      "acc_delta_mean": 0.11775,
+      "acc_delta_std": 0.039812717817300544,
+      "loss_delta0_mean": 1.6490771272778513,
+      "loss_delta_mean": 2.3338164430856705,
+      "bias_acc": 0.3963399999999999,
+      "bias_loss": 0.6847393158078192,
+      "wilcoxon_acc_p": 0.0009765625,
+      "wilcoxon_loss_p": 0.0244140625
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 100.0,
+      "n_byz": 2,
+      "delta_byz": 0.1,
+      "zeta": 0.15880433392725807,
+      "acc_delta0_mean": 0.17479,
+      "acc_delta0_std": 0.03264167428303886,
+      "acc_delta_mean": 0.2008,
+      "acc_delta_std": 0.036309916001004465,
+      "loss_delta0_mean": 2.2462386155128478,
+      "loss_delta_mean": 2.244963864386082,
+      "bias_acc": -0.026010000000000005,
+      "bias_loss": -0.001274751126765672,
+      "wilcoxon_acc_p": 0.998046875,
+      "wilcoxon_loss_p": 0.24609375
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 100.0,
+      "n_byz": 4,
+      "delta_byz": 0.2,
+      "zeta": 0.15880433392725807,
+      "acc_delta0_mean": 0.17479,
+      "acc_delta0_std": 0.03264167428303886,
+      "acc_delta_mean": 0.16857,
+      "acc_delta_std": 0.02619408521021492,
+      "loss_delta0_mean": 2.2462386155128478,
+      "loss_delta_mean": 2.2406467309594156,
+      "bias_acc": 0.006220000000000003,
+      "bias_loss": -0.00559188455343218,
+      "wilcoxon_acc_p": 0.24609375,
+      "wilcoxon_loss_p": 0.080078125
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 0.5,
+      "n_byz": 2,
+      "delta_byz": 0.1,
+      "zeta": 1.0838962553481009,
+      "acc_delta0_mean": 0.15964,
+      "acc_delta0_std": 0.03413570564672715,
+      "acc_delta_mean": 0.10916000000000001,
+      "acc_delta_std": 0.013798565142796551,
+      "loss_delta0_mean": 2.2472305443882945,
+      "loss_delta_mean": 2.310738692879677,
+      "bias_acc": 0.05048,
+      "bias_loss": 0.06350814849138242,
+      "wilcoxon_acc_p": 0.0068359375,
+      "wilcoxon_loss_p": 0.0419921875
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 0.5,
+      "n_byz": 4,
+      "delta_byz": 0.2,
+      "zeta": 1.0838962553481009,
+      "acc_delta0_mean": 0.15964,
+      "acc_delta0_std": 0.03413570564672715,
+      "acc_delta_mean": 0.1032,
+      "acc_delta_std": 0.007564258060114022,
+      "loss_delta0_mean": 2.2472305443882945,
+      "loss_delta_mean": 2.327611271739006,
+      "bias_acc": 0.056440000000000004,
+      "bias_loss": 0.08038072735071156,
+      "wilcoxon_acc_p": 0.0029296875,
+      "wilcoxon_loss_p": 0.013671875
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 0.1,
+      "n_byz": 2,
+      "delta_byz": 0.1,
+      "zeta": 1.8234377706571638,
+      "acc_delta0_mean": 0.14232999999999998,
+      "acc_delta0_std": 0.02780852567109591,
+      "acc_delta_mean": 0.10173000000000001,
+      "acc_delta_std": 0.004146335731703354,
+      "loss_delta0_mean": 2.2870019528269765,
+      "loss_delta_mean": 2.340510271191597,
+      "bias_acc": 0.04059999999999997,
+      "bias_loss": 0.05350831836462033,
+      "wilcoxon_acc_p": 0.001953125,
+      "wilcoxon_loss_p": 0.0029296875
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 0.1,
+      "n_byz": 4,
+      "delta_byz": 0.2,
+      "zeta": 1.8234377706571638,
+      "acc_delta0_mean": 0.14232999999999998,
+      "acc_delta0_std": 0.02780852567109591,
+      "acc_delta_mean": 0.10003,
+      "acc_delta_std": 8.99999999999984e-05,
+      "loss_delta0_mean": 2.2870019528269765,
+      "loss_delta_mean": 2.3402437704801557,
+      "bias_acc": 0.04229999999999999,
+      "bias_loss": 0.05324181765317926,
+      "wilcoxon_acc_p": 0.001953125,
+      "wilcoxon_loss_p": 0.013671875
+    }
+  ],
+  "confirmatory_tests": [
+    {
+      "dataset": "mnist",
+      "alpha": 100.0,
+      "n_byz": 2,
+      "metric": "acc",
+      "p": 0.9345703125
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 100.0,
+      "n_byz": 2,
+      "metric": "loss",
+      "p": 0.8388671875
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 100.0,
+      "n_byz": 4,
+      "metric": "acc",
+      "p": 0.9677734375
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 100.0,
+      "n_byz": 4,
+      "metric": "loss",
+      "p": 0.7216796875
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 0.5,
+      "n_byz": 2,
+      "metric": "acc",
+      "p": 0.0068359375
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 0.5,
+      "n_byz": 2,
+      "metric": "loss",
+      "p": 0.2158203125
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 0.5,
+      "n_byz": 4,
+      "metric": "acc",
+      "p": 0.0009765625
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 0.5,
+      "n_byz": 4,
+      "metric": "loss",
+      "p": 0.0068359375
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 0.1,
+      "n_byz": 2,
+      "metric": "acc",
+      "p": 0.0009765625
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 0.1,
+      "n_byz": 2,
+      "metric": "loss",
+      "p": 0.0419921875
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 0.1,
+      "n_byz": 4,
+      "metric": "acc",
+      "p": 0.0009765625
+    },
+    {
+      "dataset": "mnist",
+      "alpha": 0.1,
+      "n_byz": 4,
+      "metric": "loss",
+      "p": 0.0244140625
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 100.0,
+      "n_byz": 2,
+      "metric": "acc",
+      "p": 0.998046875
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 100.0,
+      "n_byz": 2,
+      "metric": "loss",
+      "p": 0.24609375
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 100.0,
+      "n_byz": 4,
+      "metric": "acc",
+      "p": 0.24609375
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 100.0,
+      "n_byz": 4,
+      "metric": "loss",
+      "p": 0.080078125
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 0.5,
+      "n_byz": 2,
+      "metric": "acc",
+      "p": 0.0068359375
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 0.5,
+      "n_byz": 2,
+      "metric": "loss",
+      "p": 0.0419921875
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 0.5,
+      "n_byz": 4,
+      "metric": "acc",
+      "p": 0.0029296875
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 0.5,
+      "n_byz": 4,
+      "metric": "loss",
+      "p": 0.013671875
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 0.1,
+      "n_byz": 2,
+      "metric": "acc",
+      "p": 0.001953125
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 0.1,
+      "n_byz": 2,
+      "metric": "loss",
+      "p": 0.0029296875
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 0.1,
+      "n_byz": 4,
+      "metric": "acc",
+      "p": 0.001953125
+    },
+    {
+      "dataset": "cifar10",
+      "alpha": 0.1,
+      "n_byz": 4,
+      "metric": "loss",
+      "p": 0.013671875
+    }
+  ],
+  "scaling_regression": {
+    "mnist": {
+      "n_points": 4,
+      "slope": 0.12403686121812622,
+      "intercept": -0.24282146825627873,
+      "r_value": 0.3155129766172541,
+      "r_squared": 0.09954843841387992,
+      "p_value": 0.6844870233827459,
+      "note": "log(bias_loss) ~ slope*log(sqrt(c)*sqrt(delta)*zeta)+intercept; slope near 1.0 (with positive r) is consistent with the Shi et al. Omega(rho^0.5 delta^0.5 zeta) scaling shape; this is exploratory given n<6."
+    },
+    "cifar10": {
+      "n_points": 4,
+      "slope": -0.18984469371920068,
+      "intercept": -2.968830469690862,
+      "r_value": -0.40165246370045044,
+      "r_squared": 0.16132470159664167,
+      "p_value": 0.5983475362995496,
+      "note": "log(bias_loss) ~ slope*log(sqrt(c)*sqrt(delta)*zeta)+intercept; slope near 1.0 (with positive r) is consistent with the Shi et al. Omega(rho^0.5 delta^0.5 zeta) scaling shape; this is exploratory given n<6."
+    }
+  },
+  "bonferroni_correction": {
+    "family_size": 24,
+    "corrected_alpha": 0.0020833333333333333
+  },
+  "n_surviving_bonferroni": 5
+}

@@ -1,0 +1,34 @@
+{
+  "final_test_acc": 0.1211,
+  "accuracy_trace": [
+    {
+      "round": 20,
+      "test_acc": 0.1151
+    },
+    {
+      "round": 40,
+      "test_acc": 0.1187
+    },
+    {
+      "round": 60,
+      "test_acc": 0.1211
+    }
+  ],
+  "diverged": false,
+  "sigma_omega": 0.0,
+  "config": {
+    "algo_name": "safe_dshb",
+    "n_regular": 20,
+    "n_byzantine": 0,
+    "attack_type": null,
+    "beta": 0.1,
+    "gamma": 0.1,
+    "tau": 0.01,
+    "epsilon": null,
+    "ragg_name": "trimmed_mean",
+    "T": 60,
+    "batch_size": 32,
+    "seed": 0,
+    "d": 206922
+  }
+}

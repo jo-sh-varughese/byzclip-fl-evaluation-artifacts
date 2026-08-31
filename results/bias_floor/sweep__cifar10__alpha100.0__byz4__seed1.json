@@ -1,0 +1,10 @@
+{
+  "final_test_acc": 0.1892,
+  "final_test_loss": 2.2481491923332215,
+  "diverged": false,
+  "dataset": "cifar10",
+  "alpha": 100.0,
+  "n_byz": 4,
+  "seed": 1,
+  "T": 100
+}

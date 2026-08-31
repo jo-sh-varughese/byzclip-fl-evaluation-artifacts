@@ -1,0 +1,74 @@
+{
+  "final_test_acc": 0.5755,
+  "accuracy_trace": [
+    {
+      "round": 8,
+      "test_acc": 0.0676
+    },
+    {
+      "round": 16,
+      "test_acc": 0.0598
+    },
+    {
+      "round": 24,
+      "test_acc": 0.101
+    },
+    {
+      "round": 32,
+      "test_acc": 0.1507
+    },
+    {
+      "round": 40,
+      "test_acc": 0.3052
+    },
+    {
+      "round": 48,
+      "test_acc": 0.3864
+    },
+    {
+      "round": 56,
+      "test_acc": 0.5059
+    },
+    {
+      "round": 64,
+      "test_acc": 0.5482
+    },
+    {
+      "round": 72,
+      "test_acc": 0.4973
+    },
+    {
+      "round": 80,
+      "test_acc": 0.5755
+    }
+  ],
+  "diverged": false,
+  "final_tau": 13.968422094814638,
+  "final_alpha_hat": 3.3589376016426695,
+  "tau_trace_summary": {
+    "min": 0.23800725021625094,
+    "max": 13.968422094814638
+  },
+  "config": {
+    "n_regular": 20,
+    "n_byzantine": 4,
+    "attack_type": "ipm",
+    "beta": 0.1,
+    "beta_hat": 0.1,
+    "gamma": 0.1,
+    "tau_init": 1.0,
+    "tau_min": 0.001,
+    "tau_max": 100.0,
+    "schedule_c": 1.0,
+    "window_rounds": 10,
+    "n_byz_assumed": 0,
+    "tail_warmup_rounds": 10,
+    "ragg_name": "trimmed_mean",
+    "T": 80,
+    "batch_size": 32,
+    "seed": 5,
+    "d": 206922
+  },
+  "cond": "ipm",
+  "seed": 5
+}

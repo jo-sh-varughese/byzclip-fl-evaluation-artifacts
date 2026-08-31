@@ -1,0 +1,8 @@
+  [warmstart__clean__seed0] acc=0.2104 diverged=False (117.0s)
+  [warmstart__clean__seed1] acc=0.1894 diverged=False (122.3s)
+  [warmstart__clean__seed2] acc=0.1738 diverged=False (123.1s)
+  [warmstart__ipm__seed0] acc=0.2003 diverged=False (126.8s)
+  [warmstart__ipm__seed1] acc=0.1971 diverged=False (131.4s)
+  [warmstart__ipm__seed2] acc=0.1413 diverged=False (132.7s)
+
+Warm-start pilot done.

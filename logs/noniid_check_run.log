@@ -1,0 +1,14 @@
+  [noniid_baseline__clean__seed0] acc=0.5196 diverged=False (20.9s)
+  [noniid_combo__clean__seed0] acc=0.6287 diverged=False (62.7s)
+  [noniid_baseline__clean__seed1] acc=0.5240 diverged=False (26.2s)
+  [noniid_combo__clean__seed1] acc=0.6346 diverged=False (49.2s)
+  [noniid_baseline__clean__seed2] acc=0.5571 diverged=False (20.9s)
+  [noniid_combo__clean__seed2] acc=0.6320 diverged=False (47.0s)
+  [noniid_baseline__ipm__seed0] acc=0.2432 diverged=False (25.0s)
+  [noniid_combo__ipm__seed0] acc=0.3198 diverged=False (59.3s)
+  [noniid_baseline__ipm__seed1] acc=0.3130 diverged=False (27.6s)
+  [noniid_combo__ipm__seed1] acc=0.3736 diverged=False (59.9s)
+  [noniid_baseline__ipm__seed2] acc=0.3911 diverged=False (28.8s)
+  [noniid_combo__ipm__seed2] acc=0.4537 diverged=False (53.1s)
+
+Non-IID check done.

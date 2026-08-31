@@ -1,0 +1,14 @@
+  [localsteps__clean__E1__seed0] acc=0.2242 diverged=False (119.9s)
+  [localsteps__clean__E1__seed1] acc=0.2211 diverged=False (123.5s)
+  [localsteps__clean__E1__seed2] acc=0.2560 diverged=False (125.2s)
+  [localsteps__clean__E5__seed0] acc=0.2267 diverged=False (332.8s)
+  [localsteps__clean__E5__seed1] acc=0.2496 diverged=False (339.0s)
+  [localsteps__clean__E5__seed2] acc=0.2654 diverged=False (321.3s)
+  [localsteps__ipm__E1__seed0] acc=0.1931 diverged=False (133.2s)
+  [localsteps__ipm__E1__seed1] acc=0.2061 diverged=False (126.1s)
+  [localsteps__ipm__E1__seed2] acc=0.1902 diverged=False (125.9s)
+  [localsteps__ipm__E5__seed0] acc=0.2158 diverged=False (318.0s)
+  [localsteps__ipm__E5__seed1] acc=0.2485 diverged=False (314.9s)
+  [localsteps__ipm__E5__seed2] acc=0.2341 diverged=False (314.7s)
+
+Local-steps pilot done.

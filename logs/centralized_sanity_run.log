@@ -1,0 +1,5 @@
+Loading CIFAR-10 / running centralized sanity checks...
+[matched_compute_T100steps] steps=100 epochs=1 test_acc=0.1781 (9.4s)
+[generous_10epochs] steps=15630 epochs=10 test_acc=0.1000 (625.7s)
+
+Centralized sanity check done.

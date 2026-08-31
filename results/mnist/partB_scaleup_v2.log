@@ -1,0 +1,10 @@
+﻿== Stage B5: ablations (key isolating result), n=10 ==
+  no_momentum_seed1: final_acc=0.1151 (78.2s)
+  no_momentum_seed2: final_acc=0.1362 (77.8s)
+  no_momentum_seed3: final_acc=0.0414 (76.8s)
+  no_momentum_seed4: final_acc=0.1059 (98.0s)
+  no_momentum_seed5: final_acc=0.0894 (103.1s)
+  no_momentum_seed6: final_acc=0.1110 (81.4s)
+  no_momentum_seed7: final_acc=0.1066 (76.0s)
+  no_momentum_seed8: final_acc=0.1011 (76.0s)
+  no_momentum_seed9: final_acc=0.0697 (75.8s)

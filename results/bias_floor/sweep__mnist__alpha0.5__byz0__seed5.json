@@ -1,0 +1,10 @@
+{
+  "final_test_acc": 0.7411,
+  "final_test_loss": 0.783050823956728,
+  "diverged": false,
+  "dataset": "mnist",
+  "alpha": 0.5,
+  "n_byz": 0,
+  "seed": 5,
+  "T": 100
+}

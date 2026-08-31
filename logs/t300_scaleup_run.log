@@ -1,0 +1,14 @@
+  [combo__clean__T300__seed5] acc=0.7309 diverged=False (197.1s)
+  [combo__clean__T300__seed6] acc=0.7280 diverged=False (155.5s)
+  [combo__clean__T300__seed7] acc=0.7308 diverged=False (139.0s)
+  [combo__clean__T300__seed8] acc=0.7276 diverged=False (137.2s)
+  [combo__clean__T300__seed9] acc=0.7287 diverged=False (134.6s)
+[clean] n=10 T=300 combo=0.7288+-0.0014
+  [combo__ipm__T300__seed5] acc=0.7018 diverged=False (172.4s)
+  [combo__ipm__T300__seed6] acc=0.7023 diverged=False (157.9s)
+  [combo__ipm__T300__seed7] acc=0.7052 diverged=False (165.8s)
+  [combo__ipm__T300__seed8] acc=0.6998 diverged=False (157.3s)
+  [combo__ipm__T300__seed9] acc=0.6992 diverged=False (163.9s)
+[ipm] n=10 T=300 combo=0.7017+-0.0020
+
+T=300 scale-up done.

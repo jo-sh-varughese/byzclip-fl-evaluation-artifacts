@@ -1,0 +1,39 @@
+{
+  "final_test_acc": 0.10000000000000002,
+  "accuracy_trace": [
+    {
+      "round": 20,
+      "test_acc": 0.09999500000000003
+    },
+    {
+      "round": 40,
+      "test_acc": 0.09999500000000003
+    },
+    {
+      "round": 60,
+      "test_acc": 0.09999500000000003
+    },
+    {
+      "round": 80,
+      "test_acc": 0.10000000000000002
+    },
+    {
+      "round": 100,
+      "test_acc": 0.10000000000000002
+    },
+    {
+      "round": 110,
+      "test_acc": 0.10000000000000002
+    }
+  ],
+  "config": {
+    "n_byzantine": 0,
+    "lam": 0.1,
+    "T": 110,
+    "seed": 0,
+    "local_steps": 5,
+    "batch_size": 8
+  },
+  "cond": "clean",
+  "seed": 0
+}

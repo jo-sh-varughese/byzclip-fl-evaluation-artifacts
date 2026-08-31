@@ -1,0 +1,56 @@
+﻿
+== Phase 2: confirm winners across seeds and conditions ==
+  phase2_clean_eps3_tau0.01_seed0: SKIP (already done) final_acc=0.0999
+  phase2_clean_eps3_tau0.01_seed1: SKIP (already done) final_acc=0.1001
+  phase2_clean_eps3_tau0.01_seed2: SKIP (already done) final_acc=0.1038
+  phase2_clean_eps3_tau0.01_seed3: SKIP (already done) final_acc=0.0891
+  phase2_clean_eps3_tau0.01_seed4: SKIP (already done) final_acc=0.1086
+  phase2_ipm_eps3_tau0.01_seed0: SKIP (already done) final_acc=0.0998
+  phase2_ipm_eps3_tau0.01_seed1: SKIP (already done) final_acc=0.0967
+  phase2_ipm_eps3_tau0.01_seed2: SKIP (already done) final_acc=0.1071
+  phase2_ipm_eps3_tau0.01_seed3: SKIP (already done) final_acc=0.1123
+  phase2_ipm_eps3_tau0.01_seed4: SKIP (already done) final_acc=0.0757
+  phase2_label_flip_eps3_tau0.01_seed0: SKIP (already done) final_acc=0.1008
+  phase2_label_flip_eps3_tau0.01_seed1: SKIP (already done) final_acc=0.1125
+  phase2_label_flip_eps3_tau0.01_seed2: SKIP (already done) final_acc=0.1091
+  phase2_label_flip_eps3_tau0.01_seed3: SKIP (already done) final_acc=0.1033
+  phase2_label_flip_eps3_tau0.01_seed4: SKIP (already done) final_acc=0.1174
+  phase2_clean_eps8_tau0.01_seed0: SKIP (already done) final_acc=0.1333
+  phase2_clean_eps8_tau0.01_seed1: SKIP (already done) final_acc=0.0956
+  phase2_clean_eps8_tau0.01_seed2: SKIP (already done) final_acc=0.1122
+  phase2_clean_eps8_tau0.01_seed3: SKIP (already done) final_acc=0.1311
+  phase2_clean_eps8_tau0.01_seed4: SKIP (already done) final_acc=0.1031
+  phase2_ipm_eps8_tau0.01_seed0: SKIP (already done) final_acc=0.0855
+  phase2_ipm_eps8_tau0.01_seed1: SKIP (already done) final_acc=0.0993
+  phase2_ipm_eps8_tau0.01_seed2: SKIP (already done) final_acc=0.1000
+  phase2_ipm_eps8_tau0.01_seed3: SKIP (already done) final_acc=0.0850
+  phase2_ipm_eps8_tau0.01_seed4: SKIP (already done) final_acc=0.0975
+  phase2_label_flip_eps8_tau0.01_seed0: SKIP (already done) final_acc=0.1271
+  phase2_label_flip_eps8_tau0.01_seed1: SKIP (already done) final_acc=0.1233
+  phase2_label_flip_eps8_tau0.01_seed2: SKIP (already done) final_acc=0.1133
+  phase2_label_flip_eps8_tau0.01_seed3: SKIP (already done) final_acc=0.0826
+  phase2_label_flip_eps8_tau0.01_seed4: SKIP (already done) final_acc=0.1023
+  phase2_clean_eps13_tau0.01_seed0: SKIP (already done) final_acc=0.1251
+  phase2_clean_eps13_tau0.01_seed1: SKIP (already done) final_acc=0.1286
+  phase2_clean_eps13_tau0.01_seed2: SKIP (already done) final_acc=0.1185
+  phase2_clean_eps13_tau0.01_seed3: SKIP (already done) final_acc=0.1387
+  phase2_clean_eps13_tau0.01_seed4: SKIP (already done) final_acc=0.1007
+  phase2_ipm_eps13_tau0.01_seed0: SKIP (already done) final_acc=0.0866
+  phase2_ipm_eps13_tau0.01_seed1: SKIP (already done) final_acc=0.0967
+  phase2_ipm_eps13_tau0.01_seed2: SKIP (already done) final_acc=0.0999
+  phase2_ipm_eps13_tau0.01_seed3: SKIP (already done) final_acc=0.0921
+  phase2_ipm_eps13_tau0.01_seed4: SKIP (already done) final_acc=0.0999
+  phase2_label_flip_eps13_tau0.01_seed0: final_acc=0.1289 diverged=False (243.5s)
+  phase2_label_flip_eps13_tau0.01_seed1: final_acc=0.1061 diverged=False (306.9s)
+  phase2_label_flip_eps13_tau0.01_seed2: final_acc=0.1170 diverged=False (234.5s)
+  phase2_label_flip_eps13_tau0.01_seed3: final_acc=0.1150 diverged=False (216.8s)
+  phase2_label_flip_eps13_tau0.01_seed4: final_acc=0.1087 diverged=False (211.4s)
+  phase2_clean_eps18_tau0.1_seed0: final_acc=0.1195 diverged=False (186.7s)
+  phase2_clean_eps18_tau0.1_seed1: final_acc=0.1117 diverged=False (184.5s)
+  phase2_clean_eps18_tau0.1_seed2: final_acc=0.1189 diverged=False (179.9s)
+  phase2_clean_eps18_tau0.1_seed3: final_acc=0.1353 diverged=False (185.0s)
+  phase2_clean_eps18_tau0.1_seed4: final_acc=0.1110 diverged=False (162.3s)
+  phase2_ipm_eps18_tau0.1_seed0: final_acc=0.0934 diverged=False (164.0s)
+  phase2_ipm_eps18_tau0.1_seed1: final_acc=0.0999 diverged=False (173.1s)
+  phase2_ipm_eps18_tau0.1_seed2: final_acc=0.1009 diverged=False (206.3s)
+  phase2_ipm_eps18_tau0.1_seed3: final_acc=0.1039 diverged=False (260.2s)

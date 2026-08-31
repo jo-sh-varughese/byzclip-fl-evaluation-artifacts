@@ -1,0 +1,8 @@
+  [combo40__clean__seed0] acc=0.6263 diverged=False (120.3s)
+  [combo40__clean__seed1] acc=0.6350 diverged=False (113.0s)
+  [combo40__clean__seed2] acc=0.6267 diverged=False (114.3s)
+  [combo40__ipm__seed0] acc=0.6055 diverged=False (95.9s)
+  [combo40__ipm__seed1] acc=0.6158 diverged=False (106.6s)
+  [combo40__ipm__seed2] acc=0.6019 diverged=False (93.8s)
+
+Larger-scale (40-client) check done.

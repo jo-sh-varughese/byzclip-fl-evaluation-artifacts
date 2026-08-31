@@ -1,0 +1,14 @@
+{
+  "delta_0.1": {
+    "n_honest": 20,
+    "f": 2,
+    "delta_byz": 0.1,
+    "c_empirical": 0.44765842362104824
+  },
+  "delta_0.2": {
+    "n_honest": 20,
+    "f": 4,
+    "delta_byz": 0.2,
+    "c_empirical": 0.5894604340226277
+  }
+}

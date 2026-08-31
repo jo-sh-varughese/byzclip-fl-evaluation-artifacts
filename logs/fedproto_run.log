@@ -1,0 +1,12 @@
+Loading CIFAR-10...
+    round 20: mean_client_acc=0.1000
+    round 40: mean_client_acc=0.1000
+    round 60: mean_client_acc=0.1000
+    round 80: mean_client_acc=0.1000
+    round 100: mean_client_acc=0.1000
+    round 110: mean_client_acc=0.1000
+  [cifar10__clean__seed0] final_acc=0.1000 (872.0s)
+    round 20: mean_client_acc=0.1000
+    round 40: mean_client_acc=0.1000
+    round 60: mean_client_acc=0.1000
+    round 80: mean_client_acc=0.1000

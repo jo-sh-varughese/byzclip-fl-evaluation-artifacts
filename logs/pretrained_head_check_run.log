@@ -1,0 +1,14 @@
+  [baseline__clean__seed0] acc=0.3014 diverged=False (20.7s)
+  [combo__clean__seed0] acc=0.5456 diverged=False (52.3s)
+  [baseline__clean__seed1] acc=0.3594 diverged=False (23.0s)
+  [combo__clean__seed1] acc=0.5438 diverged=False (40.4s)
+  [baseline__clean__seed2] acc=0.3431 diverged=False (20.5s)
+  [combo__clean__seed2] acc=0.5430 diverged=False (38.7s)
+  [baseline__ipm__seed0] acc=0.3997 diverged=False (22.7s)
+  [combo__ipm__seed0] acc=0.5263 diverged=False (41.3s)
+  [baseline__ipm__seed1] acc=0.3639 diverged=False (23.3s)
+  [combo__ipm__seed1] acc=0.5266 diverged=False (41.4s)
+  [baseline__ipm__seed2] acc=0.3436 diverged=False (23.1s)
+  [combo__ipm__seed2] acc=0.5328 diverged=False (39.3s)
+
+Pretrained-head pilot done.

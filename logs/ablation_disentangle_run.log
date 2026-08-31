@@ -1,0 +1,14 @@
+  [localsteps_only__clean__seed0] acc=0.5518 diverged=False (32.7s)
+  [localsteps_only__clean__seed1] acc=0.5765 diverged=False (44.2s)
+  [localsteps_only__clean__seed2] acc=0.5335 diverged=False (41.9s)
+  [floor_only__clean__seed0] acc=0.6021 diverged=False (17.8s)
+  [floor_only__clean__seed1] acc=0.6189 diverged=False (17.9s)
+  [floor_only__clean__seed2] acc=0.6071 diverged=False (17.6s)
+  [localsteps_only__ipm__seed0] acc=0.5689 diverged=False (33.7s)
+  [localsteps_only__ipm__seed1] acc=0.5510 diverged=False (29.2s)
+  [localsteps_only__ipm__seed2] acc=0.5560 diverged=False (28.2s)
+  [floor_only__ipm__seed0] acc=0.5925 diverged=False (15.7s)
+  [floor_only__ipm__seed1] acc=0.6047 diverged=False (15.1s)
+  [floor_only__ipm__seed2] acc=0.5912 diverged=False (15.5s)
+
+Ablation disentangle done.

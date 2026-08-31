@@ -1,0 +1,13 @@
+public pretrain set: 5000  client pool: 45000
+  pretrain epoch 1/40 avg_loss=1.9124 train_acc=0.2806
+  pretrain epoch 5/40 avg_loss=1.4488 train_acc=0.4696
+  pretrain epoch 10/40 avg_loss=1.2328 train_acc=0.5548
+  pretrain epoch 15/40 avg_loss=1.0730 train_acc=0.6178
+  pretrain epoch 20/40 avg_loss=0.8973 train_acc=0.6784
+  pretrain epoch 25/40 avg_loss=0.7764 train_acc=0.7256
+  pretrain epoch 30/40 avg_loss=0.6903 train_acc=0.7572
+  pretrain epoch 35/40 avg_loss=0.6268 train_acc=0.7756
+  pretrain epoch 40/40 avg_loss=0.5685 train_acc=0.7966
+Pretraining done in 346.6s
+Feature extraction done in 52.1s (client_pool=torch.Size([45000, 2048]), test=torch.Size([10000, 2048]))
+Saved features to C:\Users\HP\Pictures\New folder\New folder\scripts\..\results\pretrained_features_v2

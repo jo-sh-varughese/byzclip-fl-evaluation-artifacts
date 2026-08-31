@@ -1,0 +1,10 @@
+{
+  "config": {
+    "gamma": 1.0,
+    "tau": 0.1,
+    "beta": 0.1
+  },
+  "seed": 2,
+  "final_acc": 0.4957,
+  "diverged": false
+}

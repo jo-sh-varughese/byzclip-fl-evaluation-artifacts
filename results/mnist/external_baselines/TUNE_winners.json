@@ -1,0 +1,12 @@
+{
+  "byz_clip_sgd": {
+    "gamma": 1,
+    "tau": 1,
+    "final_acc": 0.9411
+  },
+  "safe_dshb": {
+    "gamma": 10,
+    "tau": 1,
+    "final_acc": 0.9508
+  }
+}

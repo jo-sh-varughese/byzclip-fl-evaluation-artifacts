@@ -1,0 +1,73 @@
+{
+  "final_test_acc": 0.1797,
+  "accuracy_trace": [
+    {
+      "round": 8,
+      "test_acc": 0.1114
+    },
+    {
+      "round": 16,
+      "test_acc": 0.136
+    },
+    {
+      "round": 24,
+      "test_acc": 0.1221
+    },
+    {
+      "round": 32,
+      "test_acc": 0.132
+    },
+    {
+      "round": 40,
+      "test_acc": 0.1112
+    },
+    {
+      "round": 48,
+      "test_acc": 0.1139
+    },
+    {
+      "round": 56,
+      "test_acc": 0.1505
+    },
+    {
+      "round": 64,
+      "test_acc": 0.1697
+    },
+    {
+      "round": 72,
+      "test_acc": 0.1593
+    },
+    {
+      "round": 80,
+      "test_acc": 0.1797
+    }
+  ],
+  "diverged": false,
+  "final_tau": 50.0,
+  "tau_trace_summary": {
+    "min": 1.0,
+    "max": 50.0
+  },
+  "config": {
+    "n_regular": 20,
+    "n_byzantine": 0,
+    "attack_type": null,
+    "beta": 0.1,
+    "beta_hat": 0.1,
+    "gamma": 0.1,
+    "tau_init": 1.0,
+    "tau_min": 0.01,
+    "tau_max": 50.0,
+    "target_quantile": 0.5,
+    "quantile_lr": 0.2,
+    "tau_warmup_rounds": 5,
+    "ragg_name": "trimmed_mean",
+    "T": 80,
+    "batch_size": 32,
+    "seed": 1,
+    "d": 282250
+  },
+  "cond": "clean",
+  "target_quantile": 0.5,
+  "seed": 1
+}

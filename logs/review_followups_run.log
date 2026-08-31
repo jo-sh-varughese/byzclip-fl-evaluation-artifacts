@@ -1,0 +1,387 @@
+
+======================================================================
+=== RUNNING baseline_independent_tuning.py  ===
+======================================================================
+Loading MNIST...
+  [TUNE/byz_clip_sgd] gamma=10 tau=1: final_acc=0.0958 diverged=False (57.8s)
+  [TUNE/byz_clip_sgd] gamma=10 tau=0.1: final_acc=0.9088 diverged=False (72.3s)
+  [TUNE/byz_clip_sgd] gamma=10 tau=0.01: final_acc=0.8015 diverged=False (56.6s)
+  [TUNE/byz_clip_sgd] gamma=10 tau=0.0001: final_acc=0.1209 diverged=False (44.5s)
+  [TUNE/byz_clip_sgd] gamma=10 tau=1e-05: final_acc=0.1138 diverged=False (50.7s)
+  [TUNE/byz_clip_sgd] gamma=10 tau=1e-06: final_acc=0.1131 diverged=False (49.8s)
+  [TUNE/byz_clip_sgd] gamma=1 tau=1: final_acc=0.9411 diverged=False (43.9s)
+  [TUNE/byz_clip_sgd] gamma=1 tau=0.1: final_acc=0.8015 diverged=False (44.7s)
+  [TUNE/byz_clip_sgd] gamma=1 tau=0.01: final_acc=0.3955 diverged=False (55.3s)
+  [TUNE/byz_clip_sgd] gamma=1 tau=0.0001: final_acc=0.1138 diverged=False (50.7s)
+  [TUNE/byz_clip_sgd] gamma=1 tau=1e-05: final_acc=0.1131 diverged=False (44.7s)
+  [TUNE/byz_clip_sgd] gamma=1 tau=1e-06: final_acc=0.1132 diverged=False (45.5s)
+  [TUNE/byz_clip_sgd] gamma=0.1 tau=1: final_acc=0.7568 diverged=False (69.5s)
+  [TUNE/byz_clip_sgd] gamma=0.1 tau=0.1: final_acc=0.3955 diverged=False (51.0s)
+  [TUNE/byz_clip_sgd] gamma=0.1 tau=0.01: final_acc=0.1209 diverged=False (54.6s)
+  [TUNE/byz_clip_sgd] gamma=0.1 tau=0.0001: final_acc=0.1131 diverged=False (51.8s)
+  [TUNE/byz_clip_sgd] gamma=0.1 tau=1e-05: final_acc=0.1132 diverged=False (46.7s)
+  [TUNE/byz_clip_sgd] gamma=0.1 tau=1e-06: final_acc=0.1132 diverged=False (46.2s)
+  [TUNE/byz_clip_sgd] gamma=0.01 tau=1: final_acc=0.1625 diverged=False (46.7s)
+  [TUNE/byz_clip_sgd] gamma=0.01 tau=0.1: final_acc=0.1209 diverged=False (53.0s)
+  [TUNE/byz_clip_sgd] gamma=0.01 tau=0.01: final_acc=0.1138 diverged=False (48.4s)
+  [TUNE/byz_clip_sgd] gamma=0.01 tau=0.0001: final_acc=0.1132 diverged=False (49.6s)
+  [TUNE/byz_clip_sgd] gamma=0.01 tau=1e-05: final_acc=0.1132 diverged=False (44.1s)
+  [TUNE/byz_clip_sgd] gamma=0.01 tau=1e-06: final_acc=0.1132 diverged=False (46.9s)
+  [TUNE/byz_clip_sgd] gamma=0.001 tau=1: final_acc=0.1160 diverged=False (45.1s)
+  [TUNE/byz_clip_sgd] gamma=0.001 tau=0.1: final_acc=0.1138 diverged=False (47.5s)
+  [TUNE/byz_clip_sgd] gamma=0.001 tau=0.01: final_acc=0.1131 diverged=False (45.6s)
+  [TUNE/byz_clip_sgd] gamma=0.001 tau=0.0001: final_acc=0.1132 diverged=False (44.4s)
+  [TUNE/byz_clip_sgd] gamma=0.001 tau=1e-05: final_acc=0.1132 diverged=False (45.2s)
+  [TUNE/byz_clip_sgd] gamma=0.001 tau=1e-06: final_acc=0.1132 diverged=False (47.0s)
+== byz_clip_sgd winner: gamma=1 tau=1 (final_acc=0.9411) ==
+  [TUNE/safe_dshb] gamma=10 tau=1: final_acc=0.9508 diverged=False (54.1s)
+  [TUNE/safe_dshb] gamma=10 tau=0.1: final_acc=0.9000 diverged=False (60.6s)
+  [TUNE/safe_dshb] gamma=10 tau=0.01: final_acc=0.7734 diverged=False (60.9s)
+  [TUNE/safe_dshb] gamma=10 tau=0.0001: final_acc=0.1211 diverged=False (44.6s)
+  [TUNE/safe_dshb] gamma=10 tau=1e-05: final_acc=0.1137 diverged=False (42.8s)
+  [TUNE/safe_dshb] gamma=10 tau=1e-06: final_acc=0.1131 diverged=False (47.9s)
+  [TUNE/safe_dshb] gamma=1 tau=1: final_acc=0.8968 diverged=False (45.0s)
+  [TUNE/safe_dshb] gamma=1 tau=0.1: final_acc=0.7734 diverged=False (44.0s)
+  [TUNE/safe_dshb] gamma=1 tau=0.01: final_acc=0.3539 diverged=False (43.2s)
+  [TUNE/safe_dshb] gamma=1 tau=0.0001: final_acc=0.1137 diverged=False (52.3s)
+  [TUNE/safe_dshb] gamma=1 tau=1e-05: final_acc=0.1131 diverged=False (47.2s)
+  [TUNE/safe_dshb] gamma=1 tau=1e-06: final_acc=0.1132 diverged=False (66.2s)
+  [TUNE/safe_dshb] gamma=0.1 tau=1: final_acc=0.6996 diverged=False (69.7s)
+  [TUNE/safe_dshb] gamma=0.1 tau=0.1: final_acc=0.3539 diverged=False (68.3s)
+  [TUNE/safe_dshb] gamma=0.1 tau=0.01: final_acc=0.1211 diverged=False (67.0s)
+  [TUNE/safe_dshb] gamma=0.1 tau=0.0001: final_acc=0.1131 diverged=False (62.0s)
+  [TUNE/safe_dshb] gamma=0.1 tau=1e-05: final_acc=0.1132 diverged=False (57.4s)
+  [TUNE/safe_dshb] gamma=0.1 tau=1e-06: final_acc=0.1132 diverged=False (52.1s)
+  [TUNE/safe_dshb] gamma=0.01 tau=1: final_acc=0.1478 diverged=False (44.3s)
+
+======================================================================
+=== RUNNING baseline_independent_tuning.py  ===
+======================================================================
+Loading MNIST...
+== byz_clip_sgd winner: gamma=1 tau=1 (final_acc=0.9411) ==
+  [TUNE/safe_dshb] gamma=0.01 tau=0.1: final_acc=0.1211 diverged=False (28.6s)
+  [TUNE/safe_dshb] gamma=0.01 tau=0.01: final_acc=0.1137 diverged=False (31.0s)
+  [TUNE/safe_dshb] gamma=0.01 tau=0.0001: final_acc=0.1132 diverged=False (32.2s)
+  [TUNE/safe_dshb] gamma=0.01 tau=1e-05: final_acc=0.1132 diverged=False (32.4s)
+  [TUNE/safe_dshb] gamma=0.01 tau=1e-06: final_acc=0.1132 diverged=False (32.9s)
+  [TUNE/safe_dshb] gamma=0.001 tau=1: final_acc=0.1159 diverged=False (34.6s)
+  [TUNE/safe_dshb] gamma=0.001 tau=0.1: final_acc=0.1137 diverged=False (35.0s)
+  [TUNE/safe_dshb] gamma=0.001 tau=0.01: final_acc=0.1131 diverged=False (35.5s)
+  [TUNE/safe_dshb] gamma=0.001 tau=0.0001: final_acc=0.1132 diverged=False (35.5s)
+  [TUNE/safe_dshb] gamma=0.001 tau=1e-05: final_acc=0.1132 diverged=False (33.9s)
+  [TUNE/safe_dshb] gamma=0.001 tau=1e-06: final_acc=0.1132 diverged=False (33.7s)
+== safe_dshb winner: gamma=10 tau=1 (final_acc=0.9508) ==
+
+Tuning grid done in 0.10 hours. Winners: {'byz_clip_sgd': {'gamma': 1, 'tau': 1, 'final_acc': 0.9411}, 'safe_dshb': {'gamma': 10, 'tau': 1, 'final_acc': 0.9508}}
+
+======================================================================
+=== RUNNING baseline_tuned_replication.py  ===
+======================================================================
+Loading MNIST...
+== BASE2_tuned: byz_clip_sgd, gamma=1, tau=1 ==
+  [BASE2_tuned/byz_clip_sgd] clean_eps8_seed0: final_acc=0.1767 diverged=False (67.6s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps8_seed1: final_acc=0.1652 diverged=False (69.0s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps8_seed2: final_acc=0.1107 diverged=False (99.3s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps8_seed3: final_acc=0.2466 diverged=False (144.8s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps8_seed4: final_acc=0.1173 diverged=False (144.6s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps8_seed5: final_acc=0.1040 diverged=False (144.3s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps8_seed6: final_acc=0.1280 diverged=False (103.4s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps8_seed7: final_acc=0.1395 diverged=False (70.8s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps8_seed8: final_acc=0.2057 diverged=False (85.4s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps8_seed9: final_acc=0.1078 diverged=False (97.6s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps18_seed0: final_acc=0.1010 diverged=False (98.5s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps18_seed1: final_acc=0.2312 diverged=False (96.9s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps18_seed2: final_acc=0.1547 diverged=False (103.6s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps18_seed3: final_acc=0.2394 diverged=False (92.7s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps18_seed4: final_acc=0.1376 diverged=False (85.6s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps18_seed5: final_acc=0.1027 diverged=False (108.2s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps18_seed6: final_acc=0.1129 diverged=False (91.8s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps18_seed7: final_acc=0.1253 diverged=False (79.2s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps18_seed8: final_acc=0.1821 diverged=False (77.7s)
+  [BASE2_tuned/byz_clip_sgd] clean_eps18_seed9: final_acc=0.1468 diverged=False (129.2s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps8_seed0: final_acc=0.1016 diverged=False (122.3s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps8_seed1: final_acc=0.0980 diverged=False (97.4s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps8_seed2: final_acc=0.1449 diverged=False (108.0s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps8_seed3: final_acc=0.0981 diverged=False (82.4s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps8_seed4: final_acc=0.1188 diverged=False (78.0s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps8_seed5: final_acc=0.0893 diverged=False (78.3s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps8_seed6: final_acc=0.0649 diverged=False (78.1s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps8_seed7: final_acc=0.1296 diverged=False (78.6s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps8_seed8: final_acc=0.1028 diverged=False (77.5s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps8_seed9: final_acc=0.1163 diverged=False (77.4s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps18_seed0: final_acc=0.0958 diverged=False (77.5s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps18_seed1: final_acc=0.0871 diverged=False (77.8s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps18_seed2: final_acc=0.1010 diverged=False (77.8s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps18_seed3: final_acc=0.0980 diverged=False (78.3s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps18_seed4: final_acc=0.0965 diverged=False (78.2s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps18_seed5: final_acc=0.1011 diverged=False (78.2s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps18_seed6: final_acc=0.0892 diverged=False (77.7s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps18_seed7: final_acc=0.0892 diverged=False (78.5s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps18_seed8: final_acc=0.0982 diverged=False (78.1s)
+  [BASE2_tuned/byz_clip_sgd] ipm_eps18_seed9: final_acc=0.1135 diverged=False (77.7s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps8_seed0: final_acc=0.1284 diverged=False (82.9s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps8_seed1: final_acc=0.0772 diverged=False (83.3s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps8_seed2: final_acc=0.1126 diverged=False (82.7s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps8_seed3: final_acc=0.0866 diverged=False (82.7s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps8_seed4: final_acc=0.1052 diverged=False (82.0s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps8_seed5: final_acc=0.0969 diverged=False (81.9s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps8_seed6: final_acc=0.0910 diverged=False (82.3s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps8_seed7: final_acc=0.1159 diverged=False (81.4s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps8_seed8: final_acc=0.1130 diverged=False (86.4s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps8_seed9: final_acc=0.1126 diverged=False (83.1s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps18_seed0: final_acc=0.1414 diverged=False (82.5s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps18_seed1: final_acc=0.0909 diverged=False (82.7s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps18_seed2: final_acc=0.1245 diverged=False (82.7s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps18_seed3: final_acc=0.1233 diverged=False (82.3s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps18_seed4: final_acc=0.1202 diverged=False (81.3s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps18_seed5: final_acc=0.1739 diverged=False (82.4s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps18_seed6: final_acc=0.1207 diverged=False (82.4s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps18_seed7: final_acc=0.1113 diverged=False (81.5s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps18_seed8: final_acc=0.1154 diverged=False (81.3s)
+  [BASE2_tuned/byz_clip_sgd] label_flip_eps18_seed9: final_acc=0.2075 diverged=False (82.6s)
+== BASE2_tuned: safe_dshb, gamma=10, tau=1 ==
+  [BASE2_tuned/safe_dshb] clean_eps8_seed0: final_acc=0.1784 diverged=False (74.6s)
+  [BASE2_tuned/safe_dshb] clean_eps8_seed1: final_acc=0.1964 diverged=False (74.8s)
+  [BASE2_tuned/safe_dshb] clean_eps8_seed2: final_acc=0.0745 diverged=False (74.1s)
+  [BASE2_tuned/safe_dshb] clean_eps8_seed3: final_acc=0.2149 diverged=False (76.3s)
+  [BASE2_tuned/safe_dshb] clean_eps8_seed4: final_acc=0.1252 diverged=False (74.5s)
+  [BASE2_tuned/safe_dshb] clean_eps8_seed5: final_acc=0.1294 diverged=False (74.3s)
+  [BASE2_tuned/safe_dshb] clean_eps8_seed6: final_acc=0.0982 diverged=False (73.9s)
+  [BASE2_tuned/safe_dshb] clean_eps8_seed7: final_acc=0.1429 diverged=False (74.3s)
+  [BASE2_tuned/safe_dshb] clean_eps8_seed8: final_acc=0.1691 diverged=False (81.5s)
+  [BASE2_tuned/safe_dshb] clean_eps8_seed9: final_acc=0.0756 diverged=False (81.9s)
+  [BASE2_tuned/safe_dshb] clean_eps18_seed0: final_acc=0.1650 diverged=False (74.9s)
+  [BASE2_tuned/safe_dshb] clean_eps18_seed1: final_acc=0.2311 diverged=False (75.0s)
+  [BASE2_tuned/safe_dshb] clean_eps18_seed2: final_acc=0.1358 diverged=False (74.6s)
+  [BASE2_tuned/safe_dshb] clean_eps18_seed3: final_acc=0.2464 diverged=False (73.6s)
+  [BASE2_tuned/safe_dshb] clean_eps18_seed4: final_acc=0.1299 diverged=False (73.8s)
+  [BASE2_tuned/safe_dshb] clean_eps18_seed5: final_acc=0.1787 diverged=False (75.5s)
+  [BASE2_tuned/safe_dshb] clean_eps18_seed6: final_acc=0.1159 diverged=False (73.9s)
+  [BASE2_tuned/safe_dshb] clean_eps18_seed7: final_acc=0.1340 diverged=False (74.7s)
+  [BASE2_tuned/safe_dshb] clean_eps18_seed8: final_acc=0.1604 diverged=False (73.3s)
+  [BASE2_tuned/safe_dshb] clean_eps18_seed9: final_acc=0.1547 diverged=False (75.0s)
+  [BASE2_tuned/safe_dshb] ipm_eps8_seed0: final_acc=0.1008 diverged=False (79.8s)
+  [BASE2_tuned/safe_dshb] ipm_eps8_seed1: final_acc=0.1048 diverged=False (77.4s)
+  [BASE2_tuned/safe_dshb] ipm_eps8_seed2: final_acc=0.0597 diverged=False (77.3s)
+  [BASE2_tuned/safe_dshb] ipm_eps8_seed3: final_acc=0.1135 diverged=False (78.0s)
+  [BASE2_tuned/safe_dshb] ipm_eps8_seed4: final_acc=0.1108 diverged=False (77.1s)
+  [BASE2_tuned/safe_dshb] ipm_eps8_seed5: final_acc=0.1028 diverged=False (76.6s)
+  [BASE2_tuned/safe_dshb] ipm_eps8_seed6: final_acc=0.0980 diverged=False (77.8s)
+  [BASE2_tuned/safe_dshb] ipm_eps8_seed7: final_acc=0.1135 diverged=False (77.2s)
+  [BASE2_tuned/safe_dshb] ipm_eps8_seed8: final_acc=0.1147 diverged=False (77.9s)
+  [BASE2_tuned/safe_dshb] ipm_eps8_seed9: final_acc=0.1515 diverged=False (77.8s)
+  [BASE2_tuned/safe_dshb] ipm_eps18_seed0: final_acc=0.0890 diverged=False (76.8s)
+  [BASE2_tuned/safe_dshb] ipm_eps18_seed1: final_acc=0.1089 diverged=False (77.6s)
+  [BASE2_tuned/safe_dshb] ipm_eps18_seed2: final_acc=0.0988 diverged=False (77.4s)
+  [BASE2_tuned/safe_dshb] ipm_eps18_seed3: final_acc=0.1140 diverged=False (76.7s)
+  [BASE2_tuned/safe_dshb] ipm_eps18_seed4: final_acc=0.1414 diverged=False (79.3s)
+  [BASE2_tuned/safe_dshb] ipm_eps18_seed5: final_acc=0.1028 diverged=False (77.4s)
+  [BASE2_tuned/safe_dshb] ipm_eps18_seed6: final_acc=0.0980 diverged=False (78.6s)
+  [BASE2_tuned/safe_dshb] ipm_eps18_seed7: final_acc=0.1132 diverged=False (77.3s)
+  [BASE2_tuned/safe_dshb] ipm_eps18_seed8: final_acc=0.1409 diverged=False (78.1s)
+  [BASE2_tuned/safe_dshb] ipm_eps18_seed9: final_acc=0.0974 diverged=False (77.4s)
+  [BASE2_tuned/safe_dshb] label_flip_eps8_seed0: final_acc=0.1228 diverged=False (83.0s)
+  [BASE2_tuned/safe_dshb] label_flip_eps8_seed1: final_acc=0.0947 diverged=False (82.5s)
+  [BASE2_tuned/safe_dshb] label_flip_eps8_seed2: final_acc=0.1194 diverged=False (84.0s)
+  [BASE2_tuned/safe_dshb] label_flip_eps8_seed3: final_acc=0.0933 diverged=False (84.0s)
+  [BASE2_tuned/safe_dshb] label_flip_eps8_seed4: final_acc=0.0979 diverged=False (84.2s)
+  [BASE2_tuned/safe_dshb] label_flip_eps8_seed5: final_acc=0.0645 diverged=False (82.5s)
+  [BASE2_tuned/safe_dshb] label_flip_eps8_seed6: final_acc=0.0569 diverged=False (84.6s)
+  [BASE2_tuned/safe_dshb] label_flip_eps8_seed7: final_acc=0.0794 diverged=False (82.8s)
+  [BASE2_tuned/safe_dshb] label_flip_eps8_seed8: final_acc=0.1099 diverged=False (84.4s)
+  [BASE2_tuned/safe_dshb] label_flip_eps8_seed9: final_acc=0.1181 diverged=False (89.1s)
+  [BASE2_tuned/safe_dshb] label_flip_eps18_seed0: final_acc=0.1499 diverged=False (84.0s)
+  [BASE2_tuned/safe_dshb] label_flip_eps18_seed1: final_acc=0.0803 diverged=False (83.3s)
+  [BASE2_tuned/safe_dshb] label_flip_eps18_seed2: final_acc=0.1371 diverged=False (86.7s)
+  [BASE2_tuned/safe_dshb] label_flip_eps18_seed3: final_acc=0.1062 diverged=False (85.3s)
+  [BASE2_tuned/safe_dshb] label_flip_eps18_seed4: final_acc=0.1204 diverged=False (83.3s)
+  [BASE2_tuned/safe_dshb] label_flip_eps18_seed5: final_acc=0.1249 diverged=False (83.6s)
+  [BASE2_tuned/safe_dshb] label_flip_eps18_seed6: final_acc=0.1008 diverged=False (84.2s)
+  [BASE2_tuned/safe_dshb] label_flip_eps18_seed7: final_acc=0.1173 diverged=False (82.1s)
+  [BASE2_tuned/safe_dshb] label_flip_eps18_seed8: final_acc=0.1031 diverged=False (82.6s)
+  [BASE2_tuned/safe_dshb] label_flip_eps18_seed9: final_acc=0.1908 diverged=False (83.7s)
+
+BASE2_tuned replication done in 2.79 hours.
+
+======================================================================
+=== RUNNING cifar10_tau_dp_search_extended.py  ===
+======================================================================
+== Phase 1 EXTENDED: tau x epsilon search, tau in {1e-4,1e-5,1e-6} ==
+  eps=3 tau=0.0001 sigma_omega=0.00101: final_acc=0.1000 diverged=False (143.1s)
+  eps=3 tau=1e-05 sigma_omega=0.00010: final_acc=0.1000 diverged=False (140.5s)
+  eps=3 tau=1e-06 sigma_omega=0.00001: final_acc=0.1000 diverged=False (141.9s)
+  eps=8 tau=0.0001 sigma_omega=0.00038: final_acc=0.1000 diverged=False (141.3s)
+  eps=8 tau=1e-05 sigma_omega=0.00004: final_acc=0.1000 diverged=False (141.1s)
+  eps=8 tau=1e-06 sigma_omega=0.00000: final_acc=0.1000 diverged=False (140.7s)
+  eps=13 tau=0.0001 sigma_omega=0.00023: final_acc=0.1000 diverged=False (141.3s)
+  eps=13 tau=1e-05 sigma_omega=0.00002: final_acc=0.1000 diverged=False (139.9s)
+  eps=13 tau=1e-06 sigma_omega=0.00000: final_acc=0.1000 diverged=False (140.8s)
+  eps=18 tau=0.0001 sigma_omega=0.00017: final_acc=0.1000 diverged=False (139.3s)
+  eps=18 tau=1e-05 sigma_omega=0.00002: final_acc=0.1000 diverged=False (141.7s)
+  eps=18 tau=1e-06 sigma_omega=0.00000: final_acc=0.1000 diverged=False (151.7s)
+  eps=23 tau=0.0001 sigma_omega=0.00013: final_acc=0.1000 diverged=False (140.1s)
+  eps=23 tau=1e-05 sigma_omega=0.00001: final_acc=0.1000 diverged=False (139.1s)
+  eps=23 tau=1e-06 sigma_omega=0.00000: final_acc=0.1000 diverged=False (138.6s)
+  NEW WINNER at eps=3: tau=0.0001 (acc=0.1000 > old 0.0999)
+
+== Phase 2 EXTENDED confirm: eps=3, new winning tau=0.0001 ==
+  phase2_clean_eps3_tau0.0001_seed0: final_acc=0.1000 diverged=False (138.8s)
+  phase2_clean_eps3_tau0.0001_seed1: final_acc=0.1095 diverged=False (138.7s)
+  phase2_clean_eps3_tau0.0001_seed2: final_acc=0.0999 diverged=False (139.2s)
+  phase2_clean_eps3_tau0.0001_seed3: final_acc=0.1144 diverged=False (139.0s)
+  phase2_clean_eps3_tau0.0001_seed4: final_acc=0.1000 diverged=False (140.5s)
+  phase2_ipm_eps3_tau0.0001_seed0: final_acc=0.1000 diverged=False (142.8s)
+  phase2_ipm_eps3_tau0.0001_seed1: final_acc=0.1117 diverged=False (144.1s)
+  phase2_ipm_eps3_tau0.0001_seed2: final_acc=0.1000 diverged=False (143.6s)
+  phase2_ipm_eps3_tau0.0001_seed3: final_acc=0.1135 diverged=False (142.9s)
+  phase2_ipm_eps3_tau0.0001_seed4: final_acc=0.1000 diverged=False (143.0s)
+  phase2_label_flip_eps3_tau0.0001_seed0: final_acc=0.1001 diverged=False (155.3s)
+  phase2_label_flip_eps3_tau0.0001_seed1: final_acc=0.1108 diverged=False (154.8s)
+  phase2_label_flip_eps3_tau0.0001_seed2: final_acc=0.1000 diverged=False (155.9s)
+  phase2_label_flip_eps3_tau0.0001_seed3: final_acc=0.1152 diverged=False (154.5s)
+  phase2_label_flip_eps3_tau0.0001_seed4: final_acc=0.1000 diverged=False (156.0s)
+
+Extended tau search done.
+
+======================================================================
+=== RUNNING run_subgaussian_cifar10.py 100 0.15 ===
+======================================================================
+gamma=0.15, draws_per_client=100
+Capturing training snapshots (clean, no-DP, no-Byzantine, CIFAR-10 SmallCNN)...
+  captured snapshot at round 10, test_acc=0.1081
+  captured snapshot at round 30, test_acc=0.1323
+  captured snapshot at round 60, test_acc=0.1807
+Collecting gradient-noise samples across snapshots/clients...
+{
+  "label": "CIFAR10_SmallCNN_n100_gamma0.15",
+  "n_theta_samples": 6000,
+  "n_std_scalars": 120000,
+  "d": 282250,
+  "draws_per_client": 100,
+  "standardization_df": 99,
+  "sigma_norm": 0.001447545616009903,
+  "hill_tail_index_alpha": 5.540585712438647,
+  "tail_check_t": [
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0
+  ],
+  "empirical_tail_prob": [
+    0.171075,
+    0.07955833333333333,
+    0.0355,
+    0.016575,
+    0.0092,
+    0.006058333333333333,
+    0.004241666666666667
+  ],
+  "gaussian_bound_2exp": [
+    0.31731050786291415,
+    0.13361440253771617,
+    0.04550026389635842,
+    0.012419330651552318,
+    0.002699796063260207,
+    0.0004652581580710802,
+    6.334248366623996e-05
+  ],
+  "excess_ratio_empirical_over_gaussian_bound": [
+    0.5391406706074435,
+    0.5954323173422559,
+    0.7802152550337453,
+    1.3346129888190275,
+    3.4076647955735986,
+    13.021444607120175,
+    66.96400932139917
+  ],
+  "t_dist_bound_df": [
+    0.3197484741393015,
+    0.1367968177159733,
+    0.04823969337263301,
+    0.014062596921148973,
+    0.003415507921578964,
+    0.0006990646483688856,
+    0.00012225152757117108
+  ],
+  "excess_ratio_empirical_over_t_dist_bound": [
+    0.5350299183146986,
+    0.5815802930336995,
+    0.7359084919088561,
+    1.1786585431509156,
+    2.693596446336716,
+    8.666342014961174,
+    34.69622630438952
+  ],
+  "ks_statistic_vs_normal": 0.18257371853543963,
+  "ks_pvalue_vs_normal": 0.0,
+  "excess_kurtosis": 14.225421282749476,
+  "accuracy_at_snapshot_round": {
+    "10": 0.1081,
+    "30": 0.1323,
+    "60": 0.1807
+  },
+  "gamma_used": 0.15
+}
+Saved report and QQ-plot to C:\Users\HP\Downloads\New folder\New folder\scripts\..\results\subgaussian
+
+======================================================================
+=== RUNNING c2_seed_extend.py  ===
+======================================================================
+Loading CIFAR-10...
+  [C2/main] clean_eps8_seed5: final_acc=0.1009 diverged=False (135.3s)
+  [C2/main] clean_eps8_seed6: final_acc=0.1284 diverged=False (137.3s)
+  [C2/main] clean_eps8_seed7: final_acc=0.1060 diverged=False (142.1s)
+  [C2/main] ipm_eps8_seed5: final_acc=0.0980 diverged=False (190.2s)
+  [C2/main] ipm_eps8_seed6: final_acc=0.0842 diverged=False (220.0s)
+  [C2/main] ipm_eps8_seed7: final_acc=0.0974 diverged=False (268.3s)
+  [CBASE2_dir/byz_clip_sgd] clean_eps8_seed5: final_acc=0.1005 diverged=False (261.8s)
+  [CBASE2_dir/byz_clip_sgd] clean_eps8_seed6: final_acc=0.0998 diverged=False (290.3s)
+  [CBASE2_dir/byz_clip_sgd] clean_eps8_seed7: final_acc=0.0874 diverged=False (314.7s)
+  [CBASE2_dir/byz_clip_sgd] ipm_eps8_seed5: final_acc=0.0928 diverged=False (323.7s)
+  [CBASE2_dir/byz_clip_sgd] ipm_eps8_seed6: final_acc=0.0990 diverged=False (320.3s)
+  [CBASE2_dir/byz_clip_sgd] ipm_eps8_seed7: final_acc=0.0976 diverged=False (317.6s)
+  [CBASE2_dir/safe_dshb] clean_eps8_seed5: final_acc=0.1071 diverged=False (315.8s)
+  [CBASE2_dir/safe_dshb] clean_eps8_seed6: final_acc=0.0941 diverged=False (325.8s)
+  [CBASE2_dir/safe_dshb] clean_eps8_seed7: final_acc=0.0991 diverged=False (300.5s)
+  [CBASE2_dir/safe_dshb] ipm_eps8_seed5: final_acc=0.0978 diverged=False (288.2s)
+  [CBASE2_dir/safe_dshb] ipm_eps8_seed6: final_acc=0.1036 diverged=False (264.1s)
+  [CBASE2_dir/safe_dshb] ipm_eps8_seed7: final_acc=0.0995 diverged=False (275.8s)
+
+C2 seed extension done.
+
+======================================================================
+=== RUNNING stageA_seed_extend.py  ===
+======================================================================
+Loading MNIST...
+  [mnist_gamma1.0_tau1.0_seed1] final_acc=0.1135 diverged=False (85.0s)
+  [mnist_gamma1.0_tau1.0_seed2] final_acc=0.0892 diverged=False (79.4s)
+  [mnist_gamma0.1_tau1.0_seed1] final_acc=0.4678 diverged=False (78.5s)
+  [mnist_gamma0.1_tau1.0_seed2] final_acc=0.5546 diverged=False (80.0s)
+  [mnist_gamma0.1_tau0.1_seed1] final_acc=0.4668 diverged=False (57.8s)
+  [mnist_gamma0.1_tau0.1_seed2] final_acc=0.5406 diverged=False (90.2s)
+  [mnist_gamma0.01_tau0.1_seed1] final_acc=0.1858 diverged=False (93.7s)
+  [mnist_gamma0.01_tau0.1_seed2] final_acc=0.2346 diverged=False (98.5s)
+  [mnist_gamma0.1_tau0.01_seed1] final_acc=0.2507 diverged=False (91.2s)
+  [mnist_gamma0.1_tau0.01_seed2] final_acc=0.3311 diverged=False (91.7s)
+  [mnist_gamma1.0_tau0.1_seed1] final_acc=0.3682 diverged=False (91.4s)
+  [mnist_gamma1.0_tau0.1_seed2] final_acc=0.4957 diverged=False (94.5s)
+Loading CIFAR-10...
+  [cifar10_gamma1.0_tau1.0_seed1] final_acc=0.0999 diverged=False (152.7s)
+  [cifar10_gamma1.0_tau1.0_seed2] final_acc=0.1125 diverged=False (140.9s)
+  [cifar10_gamma0.1_tau1.0_seed1] final_acc=0.1624 diverged=False (114.3s)
+  [cifar10_gamma0.1_tau1.0_seed2] final_acc=0.1516 diverged=False (126.5s)
+  [cifar10_gamma0.1_tau0.1_seed1] final_acc=0.1548 diverged=False (125.1s)
+  [cifar10_gamma0.1_tau0.1_seed2] final_acc=0.1491 diverged=False (121.2s)
+  [cifar10_gamma0.01_tau0.1_seed1] final_acc=0.1361 diverged=False (121.2s)
+  [cifar10_gamma0.01_tau0.1_seed2] final_acc=0.1432 diverged=False (141.5s)
+  [cifar10_gamma0.1_tau0.01_seed1] final_acc=0.1175 diverged=False (142.0s)
+  [cifar10_gamma0.1_tau0.01_seed2] final_acc=0.1162 diverged=False (146.5s)
+  [cifar10_gamma1.0_tau0.1_seed1] final_acc=0.1644 diverged=False (123.3s)
+  [cifar10_gamma1.0_tau0.1_seed2] final_acc=0.1376 diverged=False (141.3s)
+
+Stage-A seed extension done.
+
+All review follow-up stages complete.

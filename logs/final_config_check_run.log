@@ -1,0 +1,24 @@
+  [combo__clean__gamma0.3__T300__seed0] acc=0.5804 diverged=False (143.2s)
+  [combo__clean__gamma0.3__T300__seed1] acc=0.4053 diverged=False (138.1s)
+  [combo__clean__gamma0.3__T300__seed2] acc=0.2854 diverged=False (144.9s)
+  [combo__clean__gamma0.3__T300__seed3] acc=0.3456 diverged=False (92.5s)
+  [combo__clean__gamma0.3__T300__seed4] acc=0.3354 diverged=False (95.3s)
+  [combo__clean__gamma0.3__T300__seed5] acc=0.5089 diverged=False (93.5s)
+  [combo__clean__gamma0.3__T300__seed6] acc=0.2573 diverged=False (98.9s)
+  [combo__clean__gamma0.3__T300__seed7] acc=0.2419 diverged=False (93.1s)
+  [combo__clean__gamma0.3__T300__seed8] acc=0.3401 diverged=False (94.6s)
+  [combo__clean__gamma0.3__T300__seed9] acc=0.1915 diverged=False (92.1s)
+[clean] n=10 gamma=0.3 T=300 combo=0.3492+-0.1146
+  [combo__ipm__gamma0.3__T300__seed0] acc=0.7294 diverged=False (98.8s)
+  [combo__ipm__gamma0.3__T300__seed1] acc=0.7251 diverged=False (97.2s)
+  [combo__ipm__gamma0.3__T300__seed2] acc=0.7288 diverged=False (98.0s)
+  [combo__ipm__gamma0.3__T300__seed3] acc=0.7242 diverged=False (97.0s)
+  [combo__ipm__gamma0.3__T300__seed4] acc=0.7268 diverged=False (97.5s)
+  [combo__ipm__gamma0.3__T300__seed5] acc=0.7292 diverged=False (97.8s)
+  [combo__ipm__gamma0.3__T300__seed6] acc=0.7246 diverged=False (97.5s)
+  [combo__ipm__gamma0.3__T300__seed7] acc=0.7274 diverged=False (98.4s)
+  [combo__ipm__gamma0.3__T300__seed8] acc=0.7263 diverged=False (97.3s)
+  [combo__ipm__gamma0.3__T300__seed9] acc=0.7226 diverged=False (97.3s)
+[ipm] n=10 gamma=0.3 T=300 combo=0.7264+-0.0022
+
+Final config check done.

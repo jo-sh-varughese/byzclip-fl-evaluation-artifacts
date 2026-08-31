@@ -1,0 +1,140 @@
+[
+  {
+    "config": {
+      "gamma": 1.0,
+      "tau": 1.0,
+      "beta": 0.1
+    },
+    "final_acc": 0.2393,
+    "diverged": false,
+    "trace": [
+      {
+        "round": 20,
+        "test_acc": 0.3958
+      },
+      {
+        "round": 40,
+        "test_acc": 0.4931
+      },
+      {
+        "round": 60,
+        "test_acc": 0.2393
+      }
+    ]
+  },
+  {
+    "config": {
+      "gamma": 0.1,
+      "tau": 1.0,
+      "beta": 0.1
+    },
+    "final_acc": 0.5886,
+    "diverged": false,
+    "trace": [
+      {
+        "round": 20,
+        "test_acc": 0.1795
+      },
+      {
+        "round": 40,
+        "test_acc": 0.3611
+      },
+      {
+        "round": 60,
+        "test_acc": 0.5886
+      }
+    ]
+  },
+  {
+    "config": {
+      "gamma": 0.1,
+      "tau": 0.1,
+      "beta": 0.1
+    },
+    "final_acc": 0.5822,
+    "diverged": false,
+    "trace": [
+      {
+        "round": 20,
+        "test_acc": 0.1795
+      },
+      {
+        "round": 40,
+        "test_acc": 0.36
+      },
+      {
+        "round": 60,
+        "test_acc": 0.5822
+      }
+    ]
+  },
+  {
+    "config": {
+      "gamma": 0.01,
+      "tau": 0.1,
+      "beta": 0.1
+    },
+    "final_acc": 0.1326,
+    "diverged": false,
+    "trace": [
+      {
+        "round": 20,
+        "test_acc": 0.1176
+      },
+      {
+        "round": 40,
+        "test_acc": 0.1313
+      },
+      {
+        "round": 60,
+        "test_acc": 0.1326
+      }
+    ]
+  },
+  {
+    "config": {
+      "gamma": 0.1,
+      "tau": 0.01,
+      "beta": 0.1
+    },
+    "final_acc": 0.3277,
+    "diverged": false,
+    "trace": [
+      {
+        "round": 20,
+        "test_acc": 0.122
+      },
+      {
+        "round": 40,
+        "test_acc": 0.1559
+      },
+      {
+        "round": 60,
+        "test_acc": 0.3277
+      }
+    ]
+  },
+  {
+    "config": {
+      "gamma": 1.0,
+      "tau": 0.1,
+      "beta": 0.1
+    },
+    "final_acc": 0.4753,
+    "diverged": false,
+    "trace": [
+      {
+        "round": 20,
+        "test_acc": 0.386
+      },
+      {
+        "round": 40,
+        "test_acc": 0.6048
+      },
+      {
+        "round": 60,
+        "test_acc": 0.4753
+      }
+    ]
+  }
+]

@@ -1,0 +1,1 @@
+[generous_10epochs_lr0.01] steps=15630 epochs=10 test_acc=0.6522 (608.9s)

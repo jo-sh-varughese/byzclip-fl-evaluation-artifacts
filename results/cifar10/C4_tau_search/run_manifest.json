@@ -1,0 +1,1543 @@
+{
+  "phase1_search": [
+    {
+      "epsilon": 3,
+      "tau": 0.001,
+      "sigma_omega": 0.010116180862567641,
+      "final_acc": 0.0992,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps3_tau0.001.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "sigma_omega": 0.10116180862567643,
+      "final_acc": 0.0999,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps3_tau0.01.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.1,
+      "sigma_omega": 1.0116180862567643,
+      "final_acc": 0.0939,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps3_tau0.1.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.5,
+      "sigma_omega": 5.058090431283821,
+      "final_acc": 0.0854,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps3_tau0.5.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 1.0,
+      "sigma_omega": 10.116180862567642,
+      "final_acc": 0.0861,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps3_tau1.0.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.001,
+      "sigma_omega": 0.003793567823462866,
+      "final_acc": 0.0999,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps8_tau0.001.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "sigma_omega": 0.03793567823462866,
+      "final_acc": 0.1333,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps8_tau0.01.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.1,
+      "sigma_omega": 0.3793567823462866,
+      "final_acc": 0.1021,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps8_tau0.1.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.5,
+      "sigma_omega": 1.896783911731433,
+      "final_acc": 0.0903,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps8_tau0.5.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 1.0,
+      "sigma_omega": 3.793567823462866,
+      "final_acc": 0.0886,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps8_tau1.0.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.001,
+      "sigma_omega": 0.002334503275977148,
+      "final_acc": 0.0999,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps13_tau0.001.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "sigma_omega": 0.023345032759771484,
+      "final_acc": 0.1251,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps13_tau0.01.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.1,
+      "sigma_omega": 0.23345032759771484,
+      "final_acc": 0.1137,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps13_tau0.1.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.5,
+      "sigma_omega": 1.1672516379885742,
+      "final_acc": 0.1052,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps13_tau0.5.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 1.0,
+      "sigma_omega": 2.3345032759771485,
+      "final_acc": 0.0926,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps13_tau1.0.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.001,
+      "sigma_omega": 0.0016860301437612738,
+      "final_acc": 0.1,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps18_tau0.001.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.01,
+      "sigma_omega": 0.016860301437612735,
+      "final_acc": 0.1111,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps18_tau0.01.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "sigma_omega": 0.16860301437612737,
+      "final_acc": 0.1195,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps18_tau0.1.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.5,
+      "sigma_omega": 0.8430150718806368,
+      "final_acc": 0.0909,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps18_tau0.5.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 1.0,
+      "sigma_omega": 1.6860301437612737,
+      "final_acc": 0.1052,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps18_tau1.0.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.001,
+      "sigma_omega": 0.0013195018516392579,
+      "final_acc": 0.1001,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps23_tau0.001.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.01,
+      "sigma_omega": 0.013195018516392577,
+      "final_acc": 0.11,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps23_tau0.01.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "sigma_omega": 0.13195018516392576,
+      "final_acc": 0.1185,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps23_tau0.1.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.5,
+      "sigma_omega": 0.6597509258196288,
+      "final_acc": 0.0991,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps23_tau0.5.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 1.0,
+      "sigma_omega": 1.3195018516392576,
+      "final_acc": 0.1032,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps23_tau1.0.json"
+    }
+  ],
+  "winners": {
+    "3": {
+      "epsilon": 3,
+      "tau": 0.01,
+      "sigma_omega": 0.10116180862567643,
+      "final_acc": 0.0999,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps3_tau0.01.json"
+    },
+    "8": {
+      "epsilon": 8,
+      "tau": 0.01,
+      "sigma_omega": 0.03793567823462866,
+      "final_acc": 0.1333,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps8_tau0.01.json"
+    },
+    "13": {
+      "epsilon": 13,
+      "tau": 0.01,
+      "sigma_omega": 0.023345032759771484,
+      "final_acc": 0.1251,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps13_tau0.01.json"
+    },
+    "18": {
+      "epsilon": 18,
+      "tau": 0.1,
+      "sigma_omega": 0.16860301437612737,
+      "final_acc": 0.1195,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps18_tau0.1.json"
+    },
+    "23": {
+      "epsilon": 23,
+      "tau": 0.1,
+      "sigma_omega": 0.13195018516392576,
+      "final_acc": 0.1185,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps23_tau0.1.json"
+    }
+  },
+  "phase2_confirm_partial": [
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 0,
+      "final_acc": 0.0999,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps3_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 1,
+      "final_acc": 0.1001,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps3_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 2,
+      "final_acc": 0.1038,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps3_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 3,
+      "final_acc": 0.0891,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps3_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 4,
+      "final_acc": 0.1086,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps3_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 0,
+      "final_acc": 0.0998,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps3_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 1,
+      "final_acc": 0.0967,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps3_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 2,
+      "final_acc": 0.1071,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps3_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 3,
+      "final_acc": 0.1123,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps3_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 4,
+      "final_acc": 0.0757,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps3_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 0,
+      "final_acc": 0.1008,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps3_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 1,
+      "final_acc": 0.1125,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps3_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 2,
+      "final_acc": 0.1091,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps3_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 3,
+      "final_acc": 0.1033,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps3_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 4,
+      "final_acc": 0.1174,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps3_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 0,
+      "final_acc": 0.1333,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps8_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 1,
+      "final_acc": 0.0956,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps8_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 2,
+      "final_acc": 0.1122,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps8_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 3,
+      "final_acc": 0.1311,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps8_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 4,
+      "final_acc": 0.1031,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps8_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 0,
+      "final_acc": 0.0855,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps8_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 1,
+      "final_acc": 0.0993,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps8_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 2,
+      "final_acc": 0.1,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps8_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 3,
+      "final_acc": 0.085,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps8_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 4,
+      "final_acc": 0.0975,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps8_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 0,
+      "final_acc": 0.1271,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps8_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 1,
+      "final_acc": 0.1233,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps8_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 2,
+      "final_acc": 0.1133,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps8_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 3,
+      "final_acc": 0.0826,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps8_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 4,
+      "final_acc": 0.1023,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps8_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 0,
+      "final_acc": 0.1251,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps13_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 1,
+      "final_acc": 0.1286,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps13_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 2,
+      "final_acc": 0.1185,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps13_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 3,
+      "final_acc": 0.1387,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps13_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 4,
+      "final_acc": 0.1007,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps13_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 0,
+      "final_acc": 0.0866,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps13_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 1,
+      "final_acc": 0.0967,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps13_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 2,
+      "final_acc": 0.0999,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps13_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 3,
+      "final_acc": 0.0921,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps13_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 4,
+      "final_acc": 0.0999,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps13_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 0,
+      "final_acc": 0.1289,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps13_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 1,
+      "final_acc": 0.1061,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps13_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 2,
+      "final_acc": 0.117,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps13_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 3,
+      "final_acc": 0.115,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps13_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 4,
+      "final_acc": 0.1087,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps13_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "clean",
+      "seed": 0,
+      "final_acc": 0.1195,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps18_tau0.1_seed0.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "clean",
+      "seed": 1,
+      "final_acc": 0.1117,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps18_tau0.1_seed1.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "clean",
+      "seed": 2,
+      "final_acc": 0.1189,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps18_tau0.1_seed2.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "clean",
+      "seed": 3,
+      "final_acc": 0.1353,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps18_tau0.1_seed3.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "clean",
+      "seed": 4,
+      "final_acc": 0.111,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps18_tau0.1_seed4.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "ipm",
+      "seed": 0,
+      "final_acc": 0.0934,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps18_tau0.1_seed0.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "ipm",
+      "seed": 1,
+      "final_acc": 0.0999,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps18_tau0.1_seed1.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "ipm",
+      "seed": 2,
+      "final_acc": 0.1009,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps18_tau0.1_seed2.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "ipm",
+      "seed": 3,
+      "final_acc": 0.1039,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps18_tau0.1_seed3.json"
+    }
+  ],
+  "phase2_confirm": [
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 0,
+      "final_acc": 0.0999,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps3_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 1,
+      "final_acc": 0.1001,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps3_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 2,
+      "final_acc": 0.1038,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps3_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 3,
+      "final_acc": 0.0891,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps3_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 4,
+      "final_acc": 0.1086,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps3_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 0,
+      "final_acc": 0.0998,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps3_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 1,
+      "final_acc": 0.0967,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps3_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 2,
+      "final_acc": 0.1071,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps3_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 3,
+      "final_acc": 0.1123,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps3_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 4,
+      "final_acc": 0.0757,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps3_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 0,
+      "final_acc": 0.1008,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps3_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 1,
+      "final_acc": 0.1125,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps3_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 2,
+      "final_acc": 0.1091,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps3_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 3,
+      "final_acc": 0.1033,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps3_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 3,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 4,
+      "final_acc": 0.1174,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps3_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 0,
+      "final_acc": 0.1333,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps8_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 1,
+      "final_acc": 0.0956,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps8_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 2,
+      "final_acc": 0.1122,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps8_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 3,
+      "final_acc": 0.1311,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps8_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 4,
+      "final_acc": 0.1031,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps8_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 0,
+      "final_acc": 0.0855,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps8_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 1,
+      "final_acc": 0.0993,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps8_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 2,
+      "final_acc": 0.1,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps8_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 3,
+      "final_acc": 0.085,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps8_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 4,
+      "final_acc": 0.0975,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps8_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 0,
+      "final_acc": 0.1271,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps8_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 1,
+      "final_acc": 0.1233,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps8_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 2,
+      "final_acc": 0.1133,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps8_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 3,
+      "final_acc": 0.0826,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps8_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 4,
+      "final_acc": 0.1023,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps8_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 0,
+      "final_acc": 0.1251,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps13_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 1,
+      "final_acc": 0.1286,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps13_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 2,
+      "final_acc": 0.1185,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps13_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 3,
+      "final_acc": 0.1387,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps13_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "clean",
+      "seed": 4,
+      "final_acc": 0.1007,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps13_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 0,
+      "final_acc": 0.0866,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps13_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 1,
+      "final_acc": 0.0967,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps13_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 2,
+      "final_acc": 0.0999,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps13_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 3,
+      "final_acc": 0.0921,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps13_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "ipm",
+      "seed": 4,
+      "final_acc": 0.0999,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps13_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 0,
+      "final_acc": 0.1289,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps13_tau0.01_seed0.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 1,
+      "final_acc": 0.1061,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps13_tau0.01_seed1.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 2,
+      "final_acc": 0.117,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps13_tau0.01_seed2.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 3,
+      "final_acc": 0.115,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps13_tau0.01_seed3.json"
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.01,
+      "condition": "label_flip",
+      "seed": 4,
+      "final_acc": 0.1087,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps13_tau0.01_seed4.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "clean",
+      "seed": 0,
+      "final_acc": 0.1195,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps18_tau0.1_seed0.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "clean",
+      "seed": 1,
+      "final_acc": 0.1117,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps18_tau0.1_seed1.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "clean",
+      "seed": 2,
+      "final_acc": 0.1189,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps18_tau0.1_seed2.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "clean",
+      "seed": 3,
+      "final_acc": 0.1353,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps18_tau0.1_seed3.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "clean",
+      "seed": 4,
+      "final_acc": 0.111,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps18_tau0.1_seed4.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "ipm",
+      "seed": 0,
+      "final_acc": 0.0934,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps18_tau0.1_seed0.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "ipm",
+      "seed": 1,
+      "final_acc": 0.0999,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps18_tau0.1_seed1.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "ipm",
+      "seed": 2,
+      "final_acc": 0.1009,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps18_tau0.1_seed2.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "ipm",
+      "seed": 3,
+      "final_acc": 0.1039,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps18_tau0.1_seed3.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "ipm",
+      "seed": 4,
+      "final_acc": 0.0887,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps18_tau0.1_seed4.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "label_flip",
+      "seed": 0,
+      "final_acc": 0.0975,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps18_tau0.1_seed0.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "label_flip",
+      "seed": 1,
+      "final_acc": 0.1291,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps18_tau0.1_seed1.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "label_flip",
+      "seed": 2,
+      "final_acc": 0.1228,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps18_tau0.1_seed2.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "label_flip",
+      "seed": 3,
+      "final_acc": 0.1287,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps18_tau0.1_seed3.json"
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.1,
+      "condition": "label_flip",
+      "seed": 4,
+      "final_acc": 0.1123,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps18_tau0.1_seed4.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "condition": "clean",
+      "seed": 0,
+      "final_acc": 0.1185,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps23_tau0.1_seed0.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "condition": "clean",
+      "seed": 1,
+      "final_acc": 0.1238,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps23_tau0.1_seed1.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "condition": "clean",
+      "seed": 2,
+      "final_acc": 0.1398,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps23_tau0.1_seed2.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "condition": "clean",
+      "seed": 3,
+      "final_acc": 0.1588,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps23_tau0.1_seed3.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "condition": "clean",
+      "seed": 4,
+      "final_acc": 0.1276,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_clean_eps23_tau0.1_seed4.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "condition": "ipm",
+      "seed": 0,
+      "final_acc": 0.1106,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps23_tau0.1_seed0.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "condition": "ipm",
+      "seed": 1,
+      "final_acc": 0.1,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps23_tau0.1_seed1.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "condition": "ipm",
+      "seed": 2,
+      "final_acc": 0.0982,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps23_tau0.1_seed2.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "condition": "ipm",
+      "seed": 3,
+      "final_acc": 0.1024,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps23_tau0.1_seed3.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "condition": "ipm",
+      "seed": 4,
+      "final_acc": 0.071,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_ipm_eps23_tau0.1_seed4.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "condition": "label_flip",
+      "seed": 0,
+      "final_acc": 0.1058,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps23_tau0.1_seed0.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "condition": "label_flip",
+      "seed": 1,
+      "final_acc": 0.1413,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps23_tau0.1_seed1.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "condition": "label_flip",
+      "seed": 2,
+      "final_acc": 0.1381,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps23_tau0.1_seed2.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "condition": "label_flip",
+      "seed": 3,
+      "final_acc": 0.1209,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps23_tau0.1_seed3.json"
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.1,
+      "condition": "label_flip",
+      "seed": 4,
+      "final_acc": 0.1453,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase2_label_flip_eps23_tau0.1_seed4.json"
+    }
+  ],
+  "phase1_extended": [
+    {
+      "epsilon": 3,
+      "tau": 0.0001,
+      "final_acc": 0.1,
+      "diverged": false
+    },
+    {
+      "epsilon": 3,
+      "tau": 1e-05,
+      "final_acc": 0.1,
+      "diverged": false
+    },
+    {
+      "epsilon": 3,
+      "tau": 1e-06,
+      "final_acc": 0.1,
+      "diverged": false
+    },
+    {
+      "epsilon": 8,
+      "tau": 0.0001,
+      "final_acc": 0.1,
+      "diverged": false
+    },
+    {
+      "epsilon": 8,
+      "tau": 1e-05,
+      "final_acc": 0.1,
+      "diverged": false
+    },
+    {
+      "epsilon": 8,
+      "tau": 1e-06,
+      "final_acc": 0.1,
+      "diverged": false
+    },
+    {
+      "epsilon": 13,
+      "tau": 0.0001,
+      "final_acc": 0.1,
+      "diverged": false
+    },
+    {
+      "epsilon": 13,
+      "tau": 1e-05,
+      "final_acc": 0.1,
+      "diverged": false
+    },
+    {
+      "epsilon": 13,
+      "tau": 1e-06,
+      "final_acc": 0.1,
+      "diverged": false
+    },
+    {
+      "epsilon": 18,
+      "tau": 0.0001,
+      "final_acc": 0.1,
+      "diverged": false
+    },
+    {
+      "epsilon": 18,
+      "tau": 1e-05,
+      "final_acc": 0.1,
+      "diverged": false
+    },
+    {
+      "epsilon": 18,
+      "tau": 1e-06,
+      "final_acc": 0.1,
+      "diverged": false
+    },
+    {
+      "epsilon": 23,
+      "tau": 0.0001,
+      "final_acc": 0.1,
+      "diverged": false
+    },
+    {
+      "epsilon": 23,
+      "tau": 1e-05,
+      "final_acc": 0.1,
+      "diverged": false
+    },
+    {
+      "epsilon": 23,
+      "tau": 1e-06,
+      "final_acc": 0.1,
+      "diverged": false
+    }
+  ],
+  "winners_extended": {
+    "3": {
+      "epsilon": 3,
+      "tau": 0.0001,
+      "final_acc": 0.1,
+      "diverged": false
+    },
+    "8": {
+      "epsilon": 8,
+      "tau": 0.01,
+      "sigma_omega": 0.03793567823462866,
+      "final_acc": 0.1333,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps8_tau0.01.json"
+    },
+    "13": {
+      "epsilon": 13,
+      "tau": 0.01,
+      "sigma_omega": 0.023345032759771484,
+      "final_acc": 0.1251,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps13_tau0.01.json"
+    },
+    "18": {
+      "epsilon": 18,
+      "tau": 0.1,
+      "sigma_omega": 0.16860301437612737,
+      "final_acc": 0.1195,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps18_tau0.1.json"
+    },
+    "23": {
+      "epsilon": 23,
+      "tau": 0.1,
+      "sigma_omega": 0.13195018516392576,
+      "final_acc": 0.1185,
+      "diverged": false,
+      "path": "C:\\Users\\HP\\Downloads\\New folder\\New folder\\scripts\\..\\results\\cifar10\\C4_tau_search\\phase1_clean_eps23_tau0.1.json"
+    }
+  }
+}

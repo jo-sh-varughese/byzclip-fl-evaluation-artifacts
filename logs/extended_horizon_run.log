@@ -1,0 +1,99 @@
+Loading CIFAR-10...
+[cifar10__alpha0.5__byz0__seed0__T700]
+    round 50: acc=0.1452 loss=2.2881
+    round 100: acc=0.1862 loss=2.2123
+    round 150: acc=0.1580 loss=2.2237
+    round 200: acc=0.1001 loss=2.3035
+    round 250: acc=0.2092 loss=2.2459
+    round 300: acc=0.2268 loss=2.0602
+    round 350: acc=0.1000 loss=2.3451
+    round 400: acc=0.1255 loss=2.2824
+    round 450: acc=0.1514 loss=2.2391
+    round 500: acc=0.1045 loss=2.2842
+    round 550: acc=0.1997 loss=2.1762
+    round 600: acc=0.2089 loss=2.1566
+    round 650: acc=0.1714 loss=2.1497
+    round 700: acc=0.2340 loss=2.0623
+  done in 1201.3s, diverged=False
+[cifar10__alpha0.5__byz0__seed1__T700]
+    round 50: acc=0.1203 loss=2.2973
+    round 100: acc=0.1615 loss=2.2348
+    round 150: acc=0.1001 loss=2.3060
+    round 200: acc=0.1002 loss=2.3036
+    round 250: acc=0.1804 loss=2.2860
+    round 300: acc=0.1832 loss=2.2220
+    round 350: acc=0.1546 loss=2.3138
+    round 400: acc=0.1365 loss=2.2632
+    round 450: acc=0.1437 loss=2.2836
+    round 500: acc=0.1536 loss=2.2168
+    round 550: acc=0.2422 loss=2.0693
+    round 600: acc=0.1283 loss=2.2879
+    round 650: acc=0.1807 loss=2.2223
+    round 700: acc=0.1875 loss=2.2804
+  done in 1368.7s, diverged=False
+[cifar10__alpha0.5__byz0__seed2__T700]
+    round 50: acc=0.1702 loss=2.2884
+    round 100: acc=0.1753 loss=2.2109
+    round 150: acc=0.1300 loss=2.2929
+    round 200: acc=0.1740 loss=2.1978
+    round 250: acc=0.1000 loss=2.3574
+    round 300: acc=0.1000 loss=2.3088
+    round 350: acc=0.1001 loss=2.3012
+    round 400: acc=0.1591 loss=2.2699
+    round 450: acc=0.1081 loss=2.3360
+    round 500: acc=0.1081 loss=2.3074
+    round 550: acc=0.1812 loss=2.2690
+    round 600: acc=0.1038 loss=2.3109
+    round 650: acc=0.1174 loss=2.2806
+    round 700: acc=0.1797 loss=2.2759
+  done in 1067.8s, diverged=False
+[cifar10__alpha0.5__byz2__seed0__T700]
+    round 50: acc=0.1294 loss=2.3030
+    round 100: acc=0.1000 loss=2.3050
+    round 150: acc=0.1000 loss=2.3059
+    round 200: acc=0.1278 loss=2.2860
+    round 250: acc=0.2135 loss=2.2441
+    round 300: acc=0.1004 loss=2.3187
+    round 350: acc=0.1160 loss=2.2815
+    round 400: acc=0.1769 loss=2.1776
+    round 450: acc=0.1549 loss=2.2410
+    round 500: acc=0.1289 loss=2.2707
+    round 550: acc=0.2105 loss=2.1952
+    round 600: acc=0.2402 loss=2.1734
+    round 650: acc=0.2319 loss=2.2216
+    round 700: acc=0.2111 loss=2.2328
+  done in 1327.1s, diverged=False
+[cifar10__alpha0.5__byz2__seed1__T700]
+    round 50: acc=0.1147 loss=2.3123
+    round 100: acc=0.1184 loss=2.3074
+    round 150: acc=0.1283 loss=2.2945
+    round 200: acc=0.1110 loss=2.2635
+    round 250: acc=0.1111 loss=2.2922
+    round 300: acc=0.1000 loss=2.3188
+    round 350: acc=0.1000 loss=2.2999
+    round 400: acc=0.1116 loss=2.2670
+    round 450: acc=0.1038 loss=2.3061
+    round 500: acc=0.1141 loss=2.2380
+    round 550: acc=0.2036 loss=2.2022
+    round 600: acc=0.1629 loss=2.2335
+    round 650: acc=0.1171 loss=2.5946
+    round 700: acc=0.1000 loss=2.3063
+  done in 2144.2s, diverged=False
+[cifar10__alpha0.5__byz2__seed2__T700]
+    round 50: acc=0.1161 loss=2.3075
+    round 100: acc=0.1000 loss=2.3080
+    round 150: acc=0.1000 loss=2.2942
+    round 200: acc=0.1697 loss=2.2638
+    round 250: acc=0.2299 loss=2.1781
+    round 300: acc=0.1000 loss=2.2696
+    round 350: acc=0.1334 loss=2.2427
+    round 400: acc=0.2056 loss=2.2076
+    round 450: acc=0.1498 loss=2.3194
+    round 500: acc=0.1002 loss=2.3131
+    round 550: acc=0.1000 loss=2.3120
+    round 600: acc=0.0997 loss=2.3131
+    round 650: acc=0.1339 loss=2.3163
+    round 700: acc=0.1003 loss=2.3155
+  done in 2013.6s, diverged=False
+
+Extended-horizon sweep done.

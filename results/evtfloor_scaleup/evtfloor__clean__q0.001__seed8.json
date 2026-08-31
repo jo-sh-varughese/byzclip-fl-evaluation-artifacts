@@ -1,0 +1,73 @@
+{
+  "final_test_acc": 0.2092,
+  "accuracy_trace": [
+    {
+      "round": 8,
+      "test_acc": 0.1002
+    },
+    {
+      "round": 16,
+      "test_acc": 0.1
+    },
+    {
+      "round": 24,
+      "test_acc": 0.1
+    },
+    {
+      "round": 32,
+      "test_acc": 0.1308
+    },
+    {
+      "round": 40,
+      "test_acc": 0.1246
+    },
+    {
+      "round": 48,
+      "test_acc": 0.1649
+    },
+    {
+      "round": 56,
+      "test_acc": 0.1923
+    },
+    {
+      "round": 64,
+      "test_acc": 0.2542
+    },
+    {
+      "round": 72,
+      "test_acc": 0.2392
+    },
+    {
+      "round": 80,
+      "test_acc": 0.2092
+    }
+  ],
+  "diverged": false,
+  "sigma_omega": 0.0,
+  "final_floor": 1.0,
+  "final_alpha_hat": 3.427216826448173,
+  "config": {
+    "n_regular": 20,
+    "n_byzantine": 0,
+    "attack_type": null,
+    "beta": 0.1,
+    "beta_hat": 0.1,
+    "gamma": 0.1,
+    "tau": 1.0,
+    "epsilon": null,
+    "q_target": 0.001,
+    "floor_min": 0.0,
+    "floor_max": null,
+    "window_rounds": 10,
+    "n_byz_assumed": 0,
+    "floor_warmup_rounds": 10,
+    "ragg_name": "trimmed_mean",
+    "T": 80,
+    "batch_size": 32,
+    "seed": 8,
+    "d": 282250
+  },
+  "cond": "clean",
+  "q_target": 0.001,
+  "seed": 8
+}

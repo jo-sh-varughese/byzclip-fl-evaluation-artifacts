@@ -1,0 +1,67 @@
+{
+  "final_test_acc": 0.5212,
+  "accuracy_trace": [
+    {
+      "round": 8,
+      "test_acc": 0.2101
+    },
+    {
+      "round": 16,
+      "test_acc": 0.3033
+    },
+    {
+      "round": 24,
+      "test_acc": 0.3903
+    },
+    {
+      "round": 32,
+      "test_acc": 0.4339
+    },
+    {
+      "round": 40,
+      "test_acc": 0.4586
+    },
+    {
+      "round": 48,
+      "test_acc": 0.4774
+    },
+    {
+      "round": 56,
+      "test_acc": 0.4878
+    },
+    {
+      "round": 64,
+      "test_acc": 0.5009
+    },
+    {
+      "round": 72,
+      "test_acc": 0.5124
+    },
+    {
+      "round": 80,
+      "test_acc": 0.5212
+    }
+  ],
+  "diverged": false,
+  "sigma_omega": 0.0,
+  "config": {
+    "n_regular": 20,
+    "n_byzantine": 4,
+    "attack_type": "ipm",
+    "beta": 0.1,
+    "beta_hat": 0.1,
+    "gamma": 0.1,
+    "tau": 1.0,
+    "tau_floor": 0.8,
+    "epsilon": null,
+    "local_steps": 5,
+    "local_lr": 0.01,
+    "ragg_name": "trimmed_mean",
+    "T": 80,
+    "batch_size": 32,
+    "seed": 7,
+    "d": 262858
+  },
+  "cond": "ipm",
+  "seed": 7
+}

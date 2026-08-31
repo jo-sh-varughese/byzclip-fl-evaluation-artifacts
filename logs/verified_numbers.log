@@ -1,0 +1,108 @@
+=== Centralized sanity check (LR confound) ===
+Read directly from centralized_sanity_run.log / centralized_sanity_lr01_run.log (single-run script prints, not JSON) -- quoting verbatim, not recomputed:
+  matched_compute_T100steps (lr=0.1): test_acc=0.1781
+  generous_10epochs (lr=0.1, 10 epochs): test_acc=0.1000 (diverged to chance)
+  generous_10epochs (lr=0.01, 10 epochs): test_acc=0.6522
+
+=== Confound check: LR retune + GroupNorm, clean/no-DP/no-Byzantine, T=80 ===
+  SmallCNN gamma=0.1: n=3 mean=0.1875 std=0.0202 values=[np.float64(0.1675), np.float64(0.1797), np.float64(0.2152)]
+  SmallCNN gamma=0.05: n=3 mean=0.1387 std=0.0240 values=[np.float64(0.1696), np.float64(0.1111), np.float64(0.1353)]
+  SmallCNN gamma=0.02: n=3 mean=0.1208 std=0.0083 values=[np.float64(0.1323), np.float64(0.117), np.float64(0.1131)]
+  SmallCNN gamma=0.01: n=3 mean=0.1266 std=0.0056 values=[np.float64(0.1187), np.float64(0.1313), np.float64(0.1297)]
+  SmallCNNGN gamma=0.1: n=3 mean=0.1043 std=0.0048 values=[np.float64(0.0999), np.float64(0.1109), np.float64(0.102)]
+  SmallCNNGN gamma=0.05: n=3 mean=0.1115 std=0.0137 values=[np.float64(0.1001), np.float64(0.1036), np.float64(0.1307)]
+  SmallCNNGN gamma=0.02: n=3 mean=0.1634 std=0.0283 values=[np.float64(0.1837), np.float64(0.1831), np.float64(0.1233)]
+  SmallCNNGN gamma=0.01: n=3 mean=0.1903 std=0.0284 values=[np.float64(0.214), np.float64(0.1503), np.float64(0.2066)]
+
+=== Adaptive-clip (AC21) check, n=3 pilot only (never scaled up) ===
+  baseline clean: n=3 mean=0.1875 std=0.0202 values=[np.float64(0.1675), np.float64(0.1797), np.float64(0.2152)]
+  ac21(q=0.3) clean: n=3 mean=0.1875 std=0.0202 values=[np.float64(0.1675), np.float64(0.1797), np.float64(0.2152)]
+  ac21(q=0.5) clean: n=3 mean=0.1875 std=0.0202 values=[np.float64(0.1675), np.float64(0.1797), np.float64(0.2152)]
+  ac21(q=0.7) clean: n=3 mean=0.1875 std=0.0202 values=[np.float64(0.1675), np.float64(0.1797), np.float64(0.2152)]
+  baseline ipm: n=3 mean=0.1652 std=0.0224 values=[np.float64(0.1684), np.float64(0.1909), np.float64(0.1364)]
+  ac21(q=0.3) ipm: n=3 mean=0.1652 std=0.0224 values=[np.float64(0.1684), np.float64(0.1909), np.float64(0.1364)]
+  ac21(q=0.5) ipm: n=3 mean=0.1652 std=0.0224 values=[np.float64(0.1684), np.float64(0.1909), np.float64(0.1364)]
+  ac21(q=0.7) ipm: n=3 mean=0.1652 std=0.0224 values=[np.float64(0.1684), np.float64(0.1909), np.float64(0.1364)]
+
+=== Band-clip (hand-tuned floor=0.8) scale-up, n=10 ===
+  baseline clean: n=10 mean=0.1713 std=0.0315 values=[np.float64(0.1675), np.float64(0.1797), np.float64(0.2152), np.float64(0.118), np.float64(0.1857), np.float64(0.1486), np.float64(0.1474), np.float64(0.1757), np.float64(0.2278), np.float64(0.1477)]
+  bandclip(floor=0.8) clean: n=10 mean=0.1926 std=0.0372 values=[np.float64(0.2277), np.float64(0.2214), np.float64(0.2557), np.float64(0.1783), np.float64(0.1919), np.float64(0.2227), np.float64(0.1601), np.float64(0.1886), np.float64(0.1331), np.float64(0.1468)]
+  clean: wilcoxon p=0.105469
+  baseline ipm: n=10 mean=0.1626 std=0.0226 values=[np.float64(0.1684), np.float64(0.1909), np.float64(0.1364), np.float64(0.1179), np.float64(0.1953), np.float64(0.1572), np.float64(0.1717), np.float64(0.1473), np.float64(0.1675), np.float64(0.1739)]
+  bandclip(floor=0.8) ipm: n=10 mean=0.1797 std=0.0340 values=[np.float64(0.1921), np.float64(0.2065), np.float64(0.1901), np.float64(0.1198), np.float64(0.1993), np.float64(0.1808), np.float64(0.1778), np.float64(0.1472), np.float64(0.243), np.float64(0.1406)]
+  ipm: wilcoxon p=0.064453
+
+=== Warm-start (momentum cold-start fix), n=3 pilot only ===
+  baseline clean (n=3 subset): n=3 mean=0.1875 std=0.0202 values=[np.float64(0.1675), np.float64(0.1797), np.float64(0.2152)]
+  warmstart clean: n=3 mean=0.1912 std=0.0150 values=[np.float64(0.2104), np.float64(0.1894), np.float64(0.1738)]
+  baseline ipm (n=3 subset): n=3 mean=0.1652 std=0.0224 values=[np.float64(0.1684), np.float64(0.1909), np.float64(0.1364)]
+  warmstart ipm: n=3 mean=0.1796 std=0.0271 values=[np.float64(0.2003), np.float64(0.1971), np.float64(0.1413)]
+
+=== Local-steps + floor combo, n=3 pilot only, raw pixels ===
+  E=1 (floor=0.8 only) clean: n=3 mean=0.2338 std=0.0158 values=[np.float64(0.2242), np.float64(0.2211), np.float64(0.256)]
+  E=5 (floor=0.8 + local steps) clean: n=3 mean=0.2472 std=0.0159 values=[np.float64(0.2267), np.float64(0.2496), np.float64(0.2654)]
+  E=1 (floor=0.8 only) ipm: n=3 mean=0.1965 std=0.0069 values=[np.float64(0.1931), np.float64(0.2061), np.float64(0.1902)]
+  E=5 (floor=0.8 + local steps) ipm: n=3 mean=0.2328 std=0.0134 values=[np.float64(0.2158), np.float64(0.2485), np.float64(0.2341)]
+
+=== Tail-adaptive ceiling (moment_schedule, the flawed/no-op design) ===
+NOTE: this run was killed mid-execution (background-task kill, not a script bug) after clean completed to n=10 but ipm only reached n=3; superseded by the corrected evt_quantile design rather than resumed. Report n honestly per condition.
+  baseline clean: n=10 mean=0.1713 std=0.0315 values=[np.float64(0.1675), np.float64(0.1797), np.float64(0.2152), np.float64(0.118), np.float64(0.1857), np.float64(0.1486), np.float64(0.1474), np.float64(0.1757), np.float64(0.2278), np.float64(0.1477)]
+  tailadaptive(moment_schedule) clean: n=10 mean=0.1713 std=0.0315 values=[np.float64(0.1675), np.float64(0.1797), np.float64(0.2152), np.float64(0.118), np.float64(0.1857), np.float64(0.1486), np.float64(0.1475), np.float64(0.1757), np.float64(0.2277), np.float64(0.1477)]
+  clean: wilcoxon p=1.000000
+  baseline ipm: n=3 mean=0.1652 std=0.0224 values=[np.float64(0.1684), np.float64(0.1909), np.float64(0.1364)]
+  tailadaptive(moment_schedule) ipm: n=3 mean=0.1652 std=0.0224 values=[np.float64(0.1684), np.float64(0.1909), np.float64(0.1364)]
+  ipm: n=3 too small for a meaningful Wilcoxon p-value -- not computed
+
+=== Tail-adaptive ceiling, MNIST, n=10 ===
+  baseline clean: n=10 mean=0.6535 std=0.0562 values=[np.float64(0.6849), np.float64(0.626), np.float64(0.6712), np.float64(0.6749), np.float64(0.6442), np.float64(0.5789), np.float64(0.5737), np.float64(0.7196), np.float64(0.6061), np.float64(0.7559)]
+  tailadaptive(moment_schedule) clean: n=10 mean=0.6536 std=0.0562 values=[np.float64(0.6849), np.float64(0.626), np.float64(0.6712), np.float64(0.6749), np.float64(0.6445), np.float64(0.5789), np.float64(0.5737), np.float64(0.7196), np.float64(0.6061), np.float64(0.7559)]
+  clean: wilcoxon p=1.000000
+  baseline ipm: n=10 mean=0.6458 std=0.0620 values=[np.float64(0.6859), np.float64(0.6293), np.float64(0.6649), np.float64(0.6607), np.float64(0.6633), np.float64(0.5755), np.float64(0.5046), np.float64(0.71), np.float64(0.6367), np.float64(0.7273)]
+  tailadaptive(moment_schedule) ipm: n=10 mean=0.6460 std=0.0621 values=[np.float64(0.6859), np.float64(0.6293), np.float64(0.6649), np.float64(0.6607), np.float64(0.6649), np.float64(0.5755), np.float64(0.5046), np.float64(0.71), np.float64(0.6367), np.float64(0.7272)]
+  ipm: wilcoxon p=1.000000
+
+=== EVT-quantile ceiling, n=3 pilot only (no scale-up run) ===
+  evt-ceiling clean q=0.01: n=3 mean=0.1874 std=0.0206 values=[np.float64(0.167), np.float64(0.1795), np.float64(0.2156)]
+  evt-ceiling clean q=0.05: n=3 mean=0.1864 std=0.0210 values=[np.float64(0.1663), np.float64(0.1776), np.float64(0.2154)]
+  evt-ceiling clean q=0.2: n=3 mean=0.1872 std=0.0244 values=[np.float64(0.1642), np.float64(0.1764), np.float64(0.221)]
+  evt-ceiling ipm q=0.01: n=3 mean=0.1654 std=0.0227 values=[np.float64(0.1683), np.float64(0.1917), np.float64(0.1363)]
+  evt-ceiling ipm q=0.05: n=3 mean=0.1667 std=0.0233 values=[np.float64(0.1699), np.float64(0.1935), np.float64(0.1368)]
+  evt-ceiling ipm q=0.2: n=3 mean=0.1662 std=0.0233 values=[np.float64(0.1681), np.float64(0.1938), np.float64(0.1367)]
+
+=== EVT-quantile floor (q=0.001) scale-up, n=10 ===
+  baseline clean: n=10 mean=0.1713 std=0.0315 values=[np.float64(0.1675), np.float64(0.1797), np.float64(0.2152), np.float64(0.118), np.float64(0.1857), np.float64(0.1486), np.float64(0.1474), np.float64(0.1757), np.float64(0.2278), np.float64(0.1477)]
+  evtfloor(q=0.001) clean: n=10 mean=0.1837 std=0.0277 values=[np.float64(0.2068), np.float64(0.2286), np.float64(0.2006), np.float64(0.1442), np.float64(0.182), np.float64(0.198), np.float64(0.1504), np.float64(0.1531), np.float64(0.2092), np.float64(0.1637)]
+  clean: wilcoxon p=0.275391
+  baseline ipm: n=10 mean=0.1626 std=0.0226 values=[np.float64(0.1684), np.float64(0.1909), np.float64(0.1364), np.float64(0.1179), np.float64(0.1953), np.float64(0.1572), np.float64(0.1717), np.float64(0.1473), np.float64(0.1675), np.float64(0.1739)]
+  evtfloor(q=0.001) ipm: n=10 mean=0.1762 std=0.0359 values=[np.float64(0.1703), np.float64(0.1806), np.float64(0.1898), np.float64(0.1131), np.float64(0.2013), np.float64(0.1776), np.float64(0.204), np.float64(0.1386), np.float64(0.2444), np.float64(0.1421)]
+  ipm: wilcoxon p=0.375000
+
+=== Pretrained-backbone Stage 1 (2-conv, no augmentation), n=10 ===
+  baseline clean: n=10 mean=0.3279 std=0.0301 values=[np.float64(0.3014), np.float64(0.3594), np.float64(0.3431), np.float64(0.331), np.float64(0.3637), np.float64(0.299), np.float64(0.3582), np.float64(0.3403), np.float64(0.3174), np.float64(0.2659)]
+  combo(floor+localsteps) clean: n=10 mean=0.5431 std=0.0028 values=[np.float64(0.5456), np.float64(0.5438), np.float64(0.543), np.float64(0.5422), np.float64(0.5471), np.float64(0.5436), np.float64(0.5414), np.float64(0.5363), np.float64(0.5452), np.float64(0.5432)]
+  clean: wilcoxon p=0.001953
+  baseline ipm: n=10 mean=0.3565 std=0.0253 values=[np.float64(0.3997), np.float64(0.3639), np.float64(0.3436), np.float64(0.3384), np.float64(0.3295), np.float64(0.3246), np.float64(0.3676), np.float64(0.3571), np.float64(0.3999), np.float64(0.3406)]
+  combo(floor+localsteps) ipm: n=10 mean=0.5263 std=0.0038 values=[np.float64(0.5263), np.float64(0.5266), np.float64(0.5328), np.float64(0.5255), np.float64(0.5259), np.float64(0.5319), np.float64(0.52), np.float64(0.5212), np.float64(0.5281), np.float64(0.5247)]
+  ipm: wilcoxon p=0.001953
+
+=== Pretrained-backbone Stage 2 (deep+BN+aug), n=10, T=80 ===
+  baseline clean: n=10 mean=0.5423 std=0.0245 values=[np.float64(0.5617), np.float64(0.5424), np.float64(0.5037), np.float64(0.5577), np.float64(0.5422), np.float64(0.525), np.float64(0.5906), np.float64(0.5533), np.float64(0.5092), np.float64(0.537)]
+  combo(floor+localsteps) clean: n=10 mean=0.6312 std=0.0036 values=[np.float64(0.6275), np.float64(0.6337), np.float64(0.6236), np.float64(0.6307), np.float64(0.6327), np.float64(0.6284), np.float64(0.6335), np.float64(0.6348), np.float64(0.6312), np.float64(0.6359)]
+  clean: wilcoxon p=0.001953
+  baseline ipm: n=10 mean=0.5460 std=0.0112 values=[np.float64(0.5568), np.float64(0.5306), np.float64(0.5314), np.float64(0.5614), np.float64(0.5392), np.float64(0.5568), np.float64(0.552), np.float64(0.5321), np.float64(0.5535), np.float64(0.5459)]
+  combo(floor+localsteps) ipm: n=10 mean=0.6175 std=0.0040 values=[np.float64(0.6115), np.float64(0.6211), np.float64(0.6091), np.float64(0.616), np.float64(0.6206), np.float64(0.6185), np.float64(0.618), np.float64(0.6187), np.float64(0.6193), np.float64(0.6222)]
+  ipm: wilcoxon p=0.001953
+
+=== Extended rounds (T=300), n=10 (or n=5 where scale-up incomplete) ===
+  T=300 combo clean: n=10 mean=0.7288 std=0.0014 values=[np.float64(0.7296), np.float64(0.7267), np.float64(0.7274), np.float64(0.7281), np.float64(0.7297), np.float64(0.7309), np.float64(0.728), np.float64(0.7308), np.float64(0.7276), np.float64(0.7287)]
+  T=300 combo ipm: n=5 mean=0.7017 std=0.0019 values=[np.float64(0.7021), np.float64(0.701), np.float64(0.7039), np.float64(0.6985), np.float64(0.703)]
+
+=== Gamma retune for head, T=80, n=3 pilot ===
+  gamma=0.05 clean: n=3 mean=0.5722 std=0.0062 values=[np.float64(0.5692), np.float64(0.5808), np.float64(0.5666)]
+  gamma=0.1 clean: n=3 mean=0.6283 std=0.0042 values=[np.float64(0.6275), np.float64(0.6337), np.float64(0.6236)]
+  gamma=0.2 clean: n=3 mean=0.6815 std=0.0007 values=[np.float64(0.6817), np.float64(0.6823), np.float64(0.6806)]
+  gamma=0.3 clean: n=3 mean=0.7006 std=0.0032 values=[np.float64(0.6979), np.float64(0.6988), np.float64(0.7052)]
+  gamma=0.05 ipm: n=3 mean=0.5587 std=0.0082 values=[np.float64(0.5529), np.float64(0.5703), np.float64(0.5528)]
+  gamma=0.1 ipm: n=3 mean=0.6139 std=0.0052 values=[np.float64(0.6115), np.float64(0.6211), np.float64(0.6091)]
+  gamma=0.2 ipm: n=3 mean=0.6644 std=0.0024 values=[np.float64(0.6611), np.float64(0.6665), np.float64(0.6656)]
+  gamma=0.3 ipm: n=3 mean=0.6861 std=0.0011 values=[np.float64(0.6872), np.float64(0.6865), np.float64(0.6847)]

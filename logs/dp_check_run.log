@@ -1,0 +1,14 @@
+  [dp__clean__eps18__seed0] acc=0.1990 diverged=False sigma_omega=1.6860 (52.7s)
+  [dp__clean__eps18__seed1] acc=0.2073 diverged=False sigma_omega=1.6860 (76.2s)
+  [dp__clean__eps18__seed2] acc=0.1695 diverged=False sigma_omega=1.6860 (54.0s)
+  [dp__clean__eps8__seed0] acc=0.1415 diverged=False sigma_omega=3.7936 (53.4s)
+  [dp__clean__eps8__seed1] acc=0.1514 diverged=False sigma_omega=3.7936 (59.6s)
+  [dp__clean__eps8__seed2] acc=0.1369 diverged=False sigma_omega=3.7936 (67.2s)
+  [dp__ipm__eps18__seed0] acc=0.1149 diverged=False sigma_omega=1.6860 (68.8s)
+  [dp__ipm__eps18__seed1] acc=0.0851 diverged=False sigma_omega=1.6860 (57.4s)
+  [dp__ipm__eps18__seed2] acc=0.1034 diverged=False sigma_omega=1.6860 (36.3s)
+  [dp__ipm__eps8__seed0] acc=0.1268 diverged=False sigma_omega=3.7936 (43.3s)
+  [dp__ipm__eps8__seed1] acc=0.0790 diverged=False sigma_omega=3.7936 (38.9s)
+  [dp__ipm__eps8__seed2] acc=0.0980 diverged=False sigma_omega=3.7936 (37.8s)
+
+DP check done.

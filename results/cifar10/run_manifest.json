@@ -1,0 +1,208 @@
+{
+  "pilot_reductions": {
+    "seeds": "n=3 for the main IID sweep (n=2 for the Dirichlet non-IID extension) vs. the task spec's requested n=10-20.",
+    "hyperparameter_grid": "same reduced gamma x tau probe as MNIST, re-run from scratch on CIFAR-10 (MNIST-winning hyperparameters explicitly NOT assumed to transfer -- see results_summary.md H1 discussion).",
+    "epsilon_grid": "{8, 18} only for the main sweep; {8} only for the non-IID extension.",
+    "byzantine_count": "fixed at 4-of-24 (delta_byz ~ 0.2), matching the MNIST pilot.",
+    "communication_rounds_T": "80 rounds, matching the MNIST pilot for a like-for-like comparison (not a full-convergence run).",
+    "data_scope": "full CIFAR-10 train/test sets used for partitioning (50k/10k images), but see results_summary.md for actual wall-clock/feasibility notes."
+  },
+  "best_gamma": 0.1,
+  "best_tau": 1.0,
+  "best_beta_hat": 0.1,
+  "dirichlet_alpha": 0.5,
+  "stage_c1_main_sweep_iid": [
+    {
+      "condition": "clean",
+      "epsilon": 8,
+      "seed": 0,
+      "final_acc": 0.0886,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__clean_eps8_seed0.json"
+    },
+    {
+      "condition": "clean",
+      "epsilon": 8,
+      "seed": 1,
+      "final_acc": 0.0993,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__clean_eps8_seed1.json"
+    },
+    {
+      "condition": "clean",
+      "epsilon": 8,
+      "seed": 2,
+      "final_acc": 0.0978,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__clean_eps8_seed2.json"
+    },
+    {
+      "condition": "clean",
+      "epsilon": 18,
+      "seed": 0,
+      "final_acc": 0.1051,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__clean_eps18_seed0.json"
+    },
+    {
+      "condition": "clean",
+      "epsilon": 18,
+      "seed": 1,
+      "final_acc": 0.1063,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__clean_eps18_seed1.json"
+    },
+    {
+      "condition": "clean",
+      "epsilon": 18,
+      "seed": 2,
+      "final_acc": 0.0979,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__clean_eps18_seed2.json"
+    },
+    {
+      "condition": "ipm",
+      "epsilon": 8,
+      "seed": 0,
+      "final_acc": 0.0958,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__ipm_eps8_seed0.json"
+    },
+    {
+      "condition": "ipm",
+      "epsilon": 8,
+      "seed": 1,
+      "final_acc": 0.0887,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__ipm_eps8_seed1.json"
+    },
+    {
+      "condition": "ipm",
+      "epsilon": 8,
+      "seed": 2,
+      "final_acc": 0.1,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__ipm_eps8_seed2.json"
+    },
+    {
+      "condition": "ipm",
+      "epsilon": 18,
+      "seed": 0,
+      "final_acc": 0.0801,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__ipm_eps18_seed0.json"
+    },
+    {
+      "condition": "ipm",
+      "epsilon": 18,
+      "seed": 1,
+      "final_acc": 0.1017,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__ipm_eps18_seed1.json"
+    },
+    {
+      "condition": "ipm",
+      "epsilon": 18,
+      "seed": 2,
+      "final_acc": 0.0998,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__ipm_eps18_seed2.json"
+    },
+    {
+      "condition": "label_flip",
+      "epsilon": 8,
+      "seed": 0,
+      "final_acc": 0.0913,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__label_flip_eps8_seed0.json"
+    },
+    {
+      "condition": "label_flip",
+      "epsilon": 8,
+      "seed": 1,
+      "final_acc": 0.1128,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__label_flip_eps8_seed1.json"
+    },
+    {
+      "condition": "label_flip",
+      "epsilon": 8,
+      "seed": 2,
+      "final_acc": 0.0949,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__label_flip_eps8_seed2.json"
+    },
+    {
+      "condition": "label_flip",
+      "epsilon": 18,
+      "seed": 0,
+      "final_acc": 0.0974,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__label_flip_eps18_seed0.json"
+    },
+    {
+      "condition": "label_flip",
+      "epsilon": 18,
+      "seed": 1,
+      "final_acc": 0.1097,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__label_flip_eps18_seed1.json"
+    },
+    {
+      "condition": "label_flip",
+      "epsilon": 18,
+      "seed": 2,
+      "final_acc": 0.0857,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C1_main_iid__label_flip_eps18_seed2.json"
+    }
+  ],
+  "stage_c2_dirichlet_extension": [
+    {
+      "condition": "clean",
+      "seed": 0,
+      "final_acc": 0.0812,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C2_dirichlet__clean_eps8_seed0.json"
+    },
+    {
+      "condition": "clean",
+      "seed": 1,
+      "final_acc": 0.0981,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C2_dirichlet__clean_eps8_seed1.json"
+    },
+    {
+      "condition": "ipm",
+      "seed": 0,
+      "final_acc": 0.0945,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C2_dirichlet__ipm_eps8_seed0.json"
+    },
+    {
+      "condition": "ipm",
+      "seed": 1,
+      "final_acc": 0.0909,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\cifar10\\C2_dirichlet__ipm_eps8_seed1.json"
+    }
+  ]
+}

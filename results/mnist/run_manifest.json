@@ -1,0 +1,287 @@
+{
+  "pilot_reductions": {
+    "seeds": "n=3 for main sweep (n=2 for secondary MLP/RAgg/ablation checks) vs. the task spec's requested n=10-20 (itself already an improvement over the source paper's n=3).",
+    "hyperparameter_grid": "gamma searched over {1,0.1,0.01} x tau over {1,0.1,0.01} in Stage A (9 of the spec's 30 gamma x tau combinations); beta searched over the full requested {0.01,0.05,0.1}.",
+    "epsilon_grid": "{8, 18} only, vs. the spec's full {3,8,13,18,23}.",
+    "byzantine_count": "fixed at 4-of-24 (delta_byz ~ 0.2) vs. the spec's {0,2,4,6} sweep.",
+    "communication_rounds_T": "80 rounds (chosen for CPU wall-clock feasibility; not specified by the source paper text available to us).",
+    "models": "CNN is the primary sweep target; MLP gets a reduced secondary check (2 conditions x 2 seeds) rather than the full grid."
+  },
+  "best_gamma": 0.1,
+  "best_tau": 1.0,
+  "best_beta_hat": 0.1,
+  "stage_b1_beta_comparison": [
+    {
+      "beta": 0.01,
+      "final_acc": 0.4067,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B1_beta__beta0.01.json"
+    },
+    {
+      "beta": 0.05,
+      "final_acc": 0.6517,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B1_beta__beta0.05.json"
+    },
+    {
+      "beta": 0.1,
+      "final_acc": 0.6849,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B1_beta__beta0.1.json"
+    }
+  ],
+  "stage_b2_main_sweep": [
+    {
+      "condition": "clean",
+      "epsilon": 8,
+      "seed": 0,
+      "final_acc": 0.1549,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__clean_eps8_seed0.json"
+    },
+    {
+      "condition": "clean",
+      "epsilon": 8,
+      "seed": 1,
+      "final_acc": 0.1612,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__clean_eps8_seed1.json"
+    },
+    {
+      "condition": "clean",
+      "epsilon": 8,
+      "seed": 2,
+      "final_acc": 0.0734,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__clean_eps8_seed2.json"
+    },
+    {
+      "condition": "clean",
+      "epsilon": 18,
+      "seed": 0,
+      "final_acc": 0.1519,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__clean_eps18_seed0.json"
+    },
+    {
+      "condition": "clean",
+      "epsilon": 18,
+      "seed": 1,
+      "final_acc": 0.1872,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__clean_eps18_seed1.json"
+    },
+    {
+      "condition": "clean",
+      "epsilon": 18,
+      "seed": 2,
+      "final_acc": 0.1062,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__clean_eps18_seed2.json"
+    },
+    {
+      "condition": "ipm",
+      "epsilon": 8,
+      "seed": 0,
+      "final_acc": 0.0974,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__ipm_eps8_seed0.json"
+    },
+    {
+      "condition": "ipm",
+      "epsilon": 8,
+      "seed": 1,
+      "final_acc": 0.1079,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__ipm_eps8_seed1.json"
+    },
+    {
+      "condition": "ipm",
+      "epsilon": 8,
+      "seed": 2,
+      "final_acc": 0.1361,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__ipm_eps8_seed2.json"
+    },
+    {
+      "condition": "ipm",
+      "epsilon": 18,
+      "seed": 0,
+      "final_acc": 0.0986,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__ipm_eps18_seed0.json"
+    },
+    {
+      "condition": "ipm",
+      "epsilon": 18,
+      "seed": 1,
+      "final_acc": 0.1114,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__ipm_eps18_seed1.json"
+    },
+    {
+      "condition": "ipm",
+      "epsilon": 18,
+      "seed": 2,
+      "final_acc": 0.0986,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__ipm_eps18_seed2.json"
+    },
+    {
+      "condition": "label_flip",
+      "epsilon": 8,
+      "seed": 0,
+      "final_acc": 0.1172,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__label_flip_eps8_seed0.json"
+    },
+    {
+      "condition": "label_flip",
+      "epsilon": 8,
+      "seed": 1,
+      "final_acc": 0.0767,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__label_flip_eps8_seed1.json"
+    },
+    {
+      "condition": "label_flip",
+      "epsilon": 8,
+      "seed": 2,
+      "final_acc": 0.1176,
+      "diverged": false,
+      "sigma_omega": 3.793567823462866,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__label_flip_eps8_seed2.json"
+    },
+    {
+      "condition": "label_flip",
+      "epsilon": 18,
+      "seed": 0,
+      "final_acc": 0.1109,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__label_flip_eps18_seed0.json"
+    },
+    {
+      "condition": "label_flip",
+      "epsilon": 18,
+      "seed": 1,
+      "final_acc": 0.0934,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__label_flip_eps18_seed1.json"
+    },
+    {
+      "condition": "label_flip",
+      "epsilon": 18,
+      "seed": 2,
+      "final_acc": 0.1108,
+      "diverged": false,
+      "sigma_omega": 1.6860301437612737,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B2_main__label_flip_eps18_seed2.json"
+    }
+  ],
+  "stage_b3_mlp_secondary": [
+    {
+      "condition": "clean",
+      "seed": 0,
+      "final_acc": 0.1684,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B3_mlp__clean_eps8_seed0.json"
+    },
+    {
+      "condition": "clean",
+      "seed": 1,
+      "final_acc": 0.1674,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B3_mlp__clean_eps8_seed1.json"
+    },
+    {
+      "condition": "ipm",
+      "seed": 0,
+      "final_acc": 0.0886,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B3_mlp__ipm_eps8_seed0.json"
+    },
+    {
+      "condition": "ipm",
+      "seed": 1,
+      "final_acc": 0.1184,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B3_mlp__ipm_eps8_seed1.json"
+    }
+  ],
+  "stage_b4_ragg_comparison": [
+    {
+      "ragg_name": "trimmed_mean",
+      "seed": 0,
+      "final_acc": 0.0974,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B4_ragg__trimmed_mean_seed0.json"
+    },
+    {
+      "ragg_name": "trimmed_mean",
+      "seed": 1,
+      "final_acc": 0.1079,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B4_ragg__trimmed_mean_seed1.json"
+    },
+    {
+      "ragg_name": "median",
+      "seed": 0,
+      "final_acc": 0.1009,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B4_ragg__median_seed0.json"
+    },
+    {
+      "ragg_name": "median",
+      "seed": 1,
+      "final_acc": 0.098,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B4_ragg__median_seed1.json"
+    }
+  ],
+  "stage_b5_ablations": [
+    {
+      "ablation": "no_momentum",
+      "seed": 0,
+      "final_acc": 0.0974,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B5_ablation__no_momentum_seed0.json"
+    },
+    {
+      "ablation": "no_momentum",
+      "seed": 1,
+      "final_acc": 0.1151,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B5_ablation__no_momentum_seed1.json"
+    },
+    {
+      "ablation": "no_clip_no_dp",
+      "seed": 0,
+      "final_acc": 0.6859,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B5_ablation__no_clip_no_dp_seed0.json"
+    },
+    {
+      "ablation": "no_clip_no_dp",
+      "seed": 1,
+      "final_acc": 0.6293,
+      "diverged": false,
+      "path": "C:\\Users\\johansvarughese\\Desktop\\New folder\\results\\mnist\\B5_ablation__no_clip_no_dp_seed1.json"
+    }
+  ]
+}

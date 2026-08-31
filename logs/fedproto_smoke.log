@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<string>", line 10, in <module>
+  File "C:\Users\HP\Pictures\New folder\New folder\scripts\run_fedproto.py", line 85, in run_one
+    sums, counts = fedproto_local_update(
+                   ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Pictures\New folder\New folder\scripts\..\src\fedproto.py", line 72, in fedproto_local_update
+    xb, yb = next(loader)
+             ^^^^^^^^^^^^
+TypeError: 'method' object is not an iterator
